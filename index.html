@@ -147,13 +147,23 @@
                 <br><br></p>
             </div>
 
+            <div class="project-wrapper__text-btns">
+              <a
+                href="#"
+                class="cta-btn cta-btn--hero cta-btn--projects"
+                id="know-more-button"
+                >Know More</a
+              >
+            </div>
+          </div>
+
             <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/Deloitte_Logo.png"
                     class="img-fluid"
-                    alt="Project Image"
+                    alt="Deloitte Logo"
                     width="300"
                     height="148"
                   />
@@ -380,5 +390,24 @@
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    function openPopup() {
+      // Define the content for the popup (you can customize this)
+      const popupContent = `
+        <h2>Work Experience Details</h2>
+        <p>Here is the in-depth information about the work experience.</p>
+        <p>You can add more details here.</p>
+      `;
+  
+      // Create a new window with the specified content
+      const popupWindow = window.open('', 'WorkExperiencePopup', 'width=600,height=400');
+      popupWindow.document.write(popupContent);
+  
+      // Prevent the popup from navigating to a URL
+      popupWindow.document.close();
+    }
+  
+    // Add a click event listener to the "Know More" button
+    document.getElementById('know-more-button').addEventListener('click', openPopup);
+  </script>
   </body>
 </html>

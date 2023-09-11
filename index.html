@@ -133,32 +133,13 @@
           <!-- Each .row is a workexp -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Deloitte</h3>
-              <p class="project-wrapper__text-info">
+              <h2>Deloitte USI | Full-time</h2>
+              <p align="left">
                 During my tenure at Deloitte as an Analyst from July 2021 to December 2022, I embarked on a dynamic and enriching journey that allowed me to apply and further develop my skills in the field of technology and business. As a member of the USI Digital Enablement Team, I was entrusted with significant responsibilities that encompassed various aspects of Salesforce development and system enhancement.
-                <br><br>
-                My role was characterized by a strong commitment to problem-solving and a deep dedication to improving system capabilities. I played a pivotal role in the successful development and deployment of diverse Salesforce functionalities, demonstrating my expertise in diagnosing, troubleshooting, and resolving technical issues. My approach involved a rigorous root cause analysis and problem-solving methodologies, ensuring that the system operated smoothly.
-                <br><br>
-                In addition to technical prowess, I actively contributed to decision-making through data-driven analysis, aligning our solutions with industry best practices. I was instrumental in guiding a Salesforce to ServiceNow Migration project, where I acted as the key point of contact, effectively managing communication and facilitating seamless collaboration between teams for a smooth transition.
-                <br><br>
-                My time at Deloitte also nurtured my research-oriented mindset, allowing me to streamline processes and author comprehensive Standard Operating Procedure (SOP) documents. These documents not only promoted consistency and efficiency within the organization but also served as valuable references for future projects.
-                <br><br>
-                Furthermore, I actively participated in fostering a positive and cohesive work environment within the Digital Enablement Team by organizing team-building activities. My experiences at Deloitte were instrumental in honing my professional skills and preparing me for future endeavors in academia and industry.
-                <br><br></p>
+              </p>
             </div>
-            <button onclick="openPopup()">Know More</button>
-            <div class="project-wrapper__text-btns">
-              <a
-                onclick="openPopup()"
-                class="cta-btn cta-btn--hero cta-btn--projects"
-                id="know-more-button"
-                >Know More</a
-              >
-            </div>
-          </div>
-
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.deloitte.com/global/en.html" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/Deloitte_Logo.png"
@@ -170,13 +151,20 @@
                 </div>
               </a>
             </div>
+            <button id="know-more-button" class="cta-btn cta-btn--hero cta-btn--projects open-button">Know More</button>
+            <dialog class="modal" id="modal">
+              <h2>Here is a summary of my time at Deloitte</h2>
+              <p>Furthermore, I actively participated in fostering a positive and cohesive work environment within the Digital Enablement Team by organizing team-building activities. My experiences at Deloitte were instrumental in honing my professional skills and preparing me for future endeavors in academia and industry.</p>
+              <button class="cta-btn--hero cta-btn--projects close-button">Close</button>
+            </dialog>
+          </div>
           </article>
           <!-- /END Project -->
         </div>
       </div>
     </section>
     <!-- End Workexp Section -->
-
+    <br><br><br><br><br><br><br><br><br>
     <!--Projects Section-->
     <section id="projects">
       <div class="container">
@@ -390,25 +378,6 @@
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
-    <script>
-    function openPopup() {
-      // Define the content for the popup (you can customize this)
-      const popupContent = `
-        <h2>Work Experience Details</h2>
-        <p>Here is the in-depth information about the work experience.</p>
-        <p>You can add more details here.</p>
-      `;
-  
-      // Create a new window with the specified content
-      const popupWindow = window.open('', 'WorkExperiencePopup', 'width=600,height=400');
-      popupWindow.document.write(popupContent);
-  
-      // Prevent the popup from navigating to a URL
-      popupWindow.document.close();
-    }
-  
-    // Add a click event listener to the "Know More" button
-    document.getElementById('know-more-button').addEventListener('click', openPopup);
-  </script>
+    <script type="text/javascript" src="./javascript/buttons.js"></script>
   </body>
 </html>

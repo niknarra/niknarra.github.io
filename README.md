@@ -1,22 +1,31 @@
-<h1 align="center"> ⚡️ DevFolio ⚡️</h1>
+<h1 align="center"> NanFolio </h1>
 
-[![Github](https://img.shields.io/github/license/anilseervi/DevFolio?color=%2312c2e9&logo=github&style=for-the-badge)](https://github.com/AnilSeervi/DevFolio/blob/master/README.md) ![Github Stars](https://img.shields.io/github/stars/anilseervi/DevFolio?color=%23c471ed&style=for-the-badge) ![Github forks](https://img.shields.io/github/forks/anilseervi/DevFolio?color=%23f64f59&style=for-the-badge) ![GitHub deployments](https://img.shields.io/github/deployments/anilseervi/DevFolio/github-pages?label=Deploy&logo=github&style=for-the-badge)
-
-## A Modern Portfolio Template for Developers!
+## A Portfolio Template for Developers!
 
 <h2 align="center">
   <img src="assets/devfolio.gif" alt="Devfolio" />
 </h2>
+
+My work heavily modifies and expands upon the original DevFolio template created by Anil Seervi. I have updated the layout, added a few sections and made a bunch of other changes.
+
+## Updated Features
+
+⚡️ Extended layout including Work Experience & Education sections\
+⚡️ New buttons and modals\
+⚡️ Well organized documentation\
+⚡️ One Page Layout\
+⚡️ Custom SCSS\
+⚡️ Fully Responsive\
+⚡️ Valid HTML5 & CSS3\
 
 ## Features
 
 ⚡️ Modern UI Design + Reveal Animations + Hover Effects\
 ⚡️ Well organized documentation\
 ⚡️ One Page Layout\
-⚡️ Custom SCSS\
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
-⚡ Fast and SEO Optimized
+⚡️ Fast and SEO Optimized
 
 To view a demo example, **[Click Here](https://devfolio.js.org)**\
 To view a live example, **[Click Here](https://anilseervi.github.io/Portfolio/)**\
@@ -140,6 +149,33 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
   </div>
 </section>
 <!-- /END About Section -->
+```
+
+### Education Section
+
+- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside [`assets/`](./assets) folder.
+  - Recommended size for your profile image is (_450 x 450px_).
+- On `<p>` tag with class-name `.about-wrapper__info-text`, include information about you, I recommend to use 2 paragraphs in order to work well and a maximum of 3 paragraphs.
+- On last `<a>` tag, include your resume url on `href` attribute.
+
+```html
+<!-- Education Section -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="row education-wrapper">
+      <div class="education-wrapper__image">
+        <img class="img-fluid" src="./assets/education.png" alt="Education Image" />
+      </div>
+      <div class="education-wrapper__info">
+        <p class="education-wrapper__info-text">
+          I'm currently pursuing a master's degree at Virginia Tech, focusing on Software Engineering, AI, and Human-Computer Interaction fields. My education journey is marked by a commitment to excellence and a passion for learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /END Education Section -->
 ```
 
 ### Projects Section
@@ -305,16 +341,13 @@ $secondary-color: #5b86e5;
 
 ## Authors
 
-- **Anil Seervi** - [https://github.com/AnilSeervi](https://github.com/AnilSeervi)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Author - **Nikhil Narra** - [https://github.com/niknarra](https://github.com/niknarra)
+- Original Author - **Anil Seervi** - [https://github.com/AnilSeervi](https://github.com/AnilSeervi)
 
 ## Acknowledgments 🎁
 
-I was motivated and inspired while learning [ZTM: Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) to create a simpler version of [simplefolio](https://github.com/cobidev/simplefolio) for those who didn't know node and packages.
+I was immediately impressed when I came across the original portfolio design template by Anil Seervi. I built upon and extended on his work. Here is the link to his GitHub profile - https://github.com/AnilSeervi.
 
 ---
 
-<h2 align="center">Have Fun Creating Your Own Portfolio Website.</h2>
+<h2 align="center">Feel free to fork and make it your own!</h2>

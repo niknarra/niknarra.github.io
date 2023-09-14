@@ -42,3 +42,17 @@
     font-size: 2rem;
   }
 }
+.modal { 
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    max-width: 200ch;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.modal::backdrop {
+    background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    opacity: .2;
+}

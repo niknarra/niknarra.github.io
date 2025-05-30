@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://kit.fontawesome.com/e20654488d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e20654488d.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +12,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title> Nikhil Narra | Developer </title>
+    <title>Nikhil Narra | Developer</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="nikhilnarra, Nikhil Narra, CS" />
@@ -30,7 +33,10 @@
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
     <meta property="og:title" content="Nikhil Narra | Developer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Nikhil Narra's portfolio website" />
+    <meta
+      property="og:description"
+      content="Nikhil Narra's portfolio website"
+    />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
@@ -59,6 +65,12 @@
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <!-- Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- FontAwesome Icons link -->
     <link
       rel="stylesheet"
@@ -74,6 +86,8 @@
       src="./javascript/scrollveal.js"
     ></script>
 
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- Hero Section -->
@@ -85,7 +99,9 @@
           Nice to meet you!
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Let me introduce myself</a>
+          <a class="cta-btn cta-btn--hero" href="#about"
+            >Let me introduce myself</a
+          >
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -110,172 +126,331 @@
           </div>
           <div class="about-wrapper__info">
             <p align="justify" class="about-wrapper__info-text">
-              I'm Nikhil Narra, a passionate and detail-oriented graduate student with a strong foundation in computer science and a keen interest in research and process optimization. With prior work experience at Deloitte, I have honed my skills in data-driven analysis and technical innovation. My academic journey at Virginia Tech, where I am pursuing a Master's in Computer Science, has further deepened my knowledge and expanded my capabilities. As I progress in my studies, I am actively seeking internship or full-time employment opportunities beginning in the summer of 2024, where I can leverage my skills to contribute meaningfully to an organization and make a positive impact.
+              I'm Nikhil Narra, a passionate and detail-oriented graduate
+              student with a strong foundation in computer science and a keen
+              interest in research and process optimization. With prior work
+              experience at Deloitte, I have honed my skills in data-driven
+              analysis and technical innovation. My academic journey at Virginia
+              Tech, where I am pursuing a Master's in Computer Science, has
+              further deepened my knowledge and expanded my capabilities. As I
+              progress in my studies, I am actively seeking internship or
+              full-time employment opportunities beginning in the summer of
+              2024, where I can leverage my skills to contribute meaningfully to
+              an organization and make a positive impact.
             </p>
             <p align="justify" class="about-wrapper__info-text">
-              Outside of work and academics, I have a diverse range of interests and hobbies that help me maintain a balanced and creative life. I am an avid car enthusiast and enjoy immersing myself in the world of automotive design and engineering. Additionally, I have a creative side that I explore through writing screenplays and diving into captivating books. When it's time to unwind, you'll often find me engaged in video games. These passions not only provide an escape from the rigors of academia but also contribute to my problem-solving abilities and my ability to think outside the box in both my academic and professional pursuits.
+              Outside of work and academics, I have a diverse range of interests
+              and hobbies that help me maintain a balanced and creative life. I
+              am an avid car enthusiast and enjoy immersing myself in the world
+              of automotive design and engineering. Additionally, I have a
+              creative side that I explore through writing screenplays and
+              diving into captivating books. When it's time to unwind, you'll
+              often find me engaged in video games. These passions not only
+              provide an escape from the rigors of academia but also contribute
+              to my problem-solving abilities and my ability to think outside
+              the box in both my academic and professional pursuits.
             </p>
             <span class="about-wrapper__cta">
-              <a href="assets/Nikhil's Resume.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+              <a
+                href="assets/Nikhil's Resume.pdf"
+                class="cta-btn cta-btn--resume"
+                >View Resume</a
+              >
             </span>
           </div>
         </div>
       </div>
     </section>
     <!-- /END About Section -->
-     <!--Work Section-->
-     <section id="workexp">
+    <!--Work Section-->
+    <section id="workexp">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Work Experience</h2>
-          <!-- Each .row is a workexp -->
-          
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h2>Blackhawk Network | Coppell, TX<br>April 2025 - Present</h2><br>
-              <p align="justify">
-                As a <b>Software Developer</b> at Blackhawk Network, I am responsible for developing and maintaining software solutions that power the company's digital gift card and payment services platform. My role involves collaborating with cross-functional teams to deliver high-quality software solutions that enhance the customer experience and drive business growth.
-              </p>
-            </div>
-            <div class="project-wrapper__image" style="display: flex; align-items: center; justify-content: center;">
-              <a href="https://www.blackhawknetwork.com" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    align="center"
-                    src="./assets/bhn.png"
-                    class="img-fluid"
-                    alt="Blackhawk Network Logo"
-                    width="300"
-                    height="300"
-                  />
+
+          <div class="swiper work-swiper">
+            <div class="swiper-wrapper">
+              <!-- Blackhawk Network -->
+              <div class="swiper-slide">
+                <div class="work-content">
+                  <div class="work-header">
+                    <h2>Blackhawk Network</h2>
+                    <h3>Software Developer</h3>
+                    <p class="work-location">
+                      Apr. 2025 - Present | Coppell, TX
+                    </p>
+                  </div>
+                  <div class="work-description">
+                    <p align="justify">
+                      As a <b>Software Developer</b> at Blackhawk Network, I am
+                      responsible for developing and maintaining software
+                      solutions that power the company's digital gift card and
+                      payment services platform. My role involves collaborating
+                      with cross-functional teams to deliver high-quality
+                      software solutions that enhance the customer experience
+                      and drive business growth.
+                    </p>
+                  </div>
+                  <div class="work-logo">
+                    <a
+                      href="https://www.blackhawknetwork.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./assets/bhn.png"
+                        class="img-fluid"
+                        alt="Blackhawk Network Logo"
+                        width="250"
+                        height="250"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <br>
-          <!-- /END WorkExp -->
-          
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h2>Virginia Tech | Blacksburg, VA<br>Jan 2023 - Apr 2025</h2><br>
-              <p align="justify">
-                I was engaged as a <b>Visualization Intern</b> with <b>Virginia Tech's Advanced Research Computing</b>, working alongside Dr. Nicholas Polys, focusing on high-performance, web-based, and immersive visualizations. My work involved utilizing X3D and X3DOM for dynamic visualization projects and developing applications that helped in contributing to the forefront of visualization technology in a research-intensive environment.
-              </p>
-            </div>
-            <div class="project-wrapper__image" style="display: flex; align-items: center; justify-content: center;">
-              <a href="https://www.vt.edu" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    align="center"
-                    src="./assets/vt.png"
-                    class="img-fluid"
-                    alt="Virginia Tech Logo"
-                    width="300"
-                    height="148"
-                  />
+              </div>
+
+              <!-- Virginia Tech - Visualization Intern -->
+              <div class="swiper-slide">
+                <div class="work-content">
+                  <div class="work-header">
+                    <h2>Virginia Tech</h2>
+                    <h3>Visualization Engineer</h3>
+                    <p class="work-location">
+                      Jan. 2023 - Apr. 2025 | Blacksburg, VA
+                    </p>
+                  </div>
+                  <div class="work-description">
+                    <p align="justify">
+                      I was engaged as a <b>Visualization Intern</b> with
+                      <b>Virginia Tech's Advanced Research Computing</b>,
+                      working alongside
+                      <a
+                        href="https://people.cs.vt.edu/~npolys/"
+                        target="_blank"
+                        >Dr. Nicholas Polys</a
+                      >, focusing on high-performance, web-based, and immersive
+                      visualizations. My work involved utilizing X3D and X3DOM
+                      for dynamic visualization projects and developing
+                      applications that helped in contributing to the forefront
+                      of visualization technology in a research-intensive
+                      environment.
+                    </p>
+                  </div>
+                  <div class="work-logo">
+                    <a
+                      href="https://arc.vt.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./assets/vt.png"
+                        class="img-fluid"
+                        alt="Virginia Tech Logo"
+                        width="300"
+                        height="300"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </a>
-            </div>
-            <div class="project-wrapper__text">
-              <h2>Virginia Tech | Blacksburg, VA<br>Jan 2023 - Apr 2025</h2><br>
-              <p align="justify">
-                I was a <b>Computer Scientist</b> at <b>Virginia Tech's Center for Rural Education</b>, where I was involved in a project under the guidance of Research Scientist Dr. Rachelle Kuehl and Director Dr. Amy Azano. My primary responsibility was leading the full lifecycle development of a full stack online survey analysis tool. More importantly, this role underscored my commitment to leveraging technology to forge a positive impact, particularly in enhancing educational tools and resources for rural communities.</p>
-            </div>
-            <div class="project-wrapper__image" style="display: flex; align-items: center; justify-content: center;">
-              <a href="https://www.vt.edu" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    align="center"
-                    src="assets/vt.png"
-                    class="img-fluid"
-                    alt="Virginia Tech Logo"
-                    width="300"
-                    height="148"
-                  />
+              </div>
+
+              <!-- Virginia Tech - Computer Scientist -->
+              <div class="swiper-slide">
+                <div class="work-content">
+                  <div class="work-header">
+                    <h2>Virginia Tech</h2>
+                    <h3>Computer Scientist</h3>
+                    <p class="work-location">
+                      Jan. 2023 - Apr. 2025 | Blacksburg, VA
+                    </p>
+                  </div>
+                  <div class="work-description">
+                    <p align="justify">
+                      As a <b>Computer Scientist</b> at
+                      <b>Virginia Tech's Center for Rural Education</b>, I was
+                      involved in a project under the guidance of Research
+                      Scientist Dr. Rachelle Kuehl and Director Dr. Amy Azano.
+                      My primary responsibility was leading the full lifecycle
+                      development of a full stack online survey analysis tool.
+                      More importantly, this role underscored my commitment to
+                      leveraging technology to forge a positive impact,
+                      particularly in enhancing educational tools and resources
+                      for rural communities.
+                    </p>
+                  </div>
+                  <div class="work-logo">
+                    <a
+                      href="https://rural.vt.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./assets/vt.png"
+                        class="img-fluid"
+                        alt="Virginia Tech Logo"
+                        width="300"
+                        height="300"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <br>
-          <!-- /END WorkExp -->
-          
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h2>Deloitte USI | Hyderabad, India<br>July 2021 - December 2023</h2><br>
-              <p align="justify">
-                During my tenure as an <b>Analyst</b>, I embarked on a dynamic and enriching journey that allowed me to apply and further develop my skills in the field of technology and business. As a member of the <b>USI Digital Enablement Team</b>, I was entrusted with significant responsibilities that encompassed various aspects of Salesforce development and system enhancement.
-              </p>
-            </div>
-            <div class="project-wrapper__image" style="display: flex; align-items: center; justify-content: center;">
-              <a href="https://www.deloitte.com/global/en.html" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    align="center"
-                    src="./assets/Deloitte_Logo.png"
-                    class="img-fluid"
-                    alt="Deloitte Logo"
-                    width="300"
-                    height="148"
-                  />
+              </div>
+
+              <!-- Deloitte -->
+              <div class="swiper-slide">
+                <div class="work-content">
+                  <div class="work-header">
+                    <h2>Deloitte</h2>
+                    <h3>Analyst</h3>
+                    <p class="work-location">
+                      Jul. 2021 - Dec. 2023 | Hyderabad, India
+                    </p>
+                  </div>
+                  <div class="work-description">
+                    <p align="justify">
+                      During my tenure as an <b>Analyst</b>, I embarked on a
+                      dynamic and enriching journey that allowed me to apply and
+                      further develop my skills in the field of technology and
+                      business. As a member of the
+                      <b>USI Digital Enablement Team</b>, I was entrusted with
+                      significant responsibilities that encompassed various
+                      aspects of Salesforce development and system enhancement.
+                    </p>
+                    <button
+                      class="cta-btn cta-btn--hero"
+                      onclick="document.getElementById('achievements-modal').showModal()"
+                    >
+                      View Key Achievements
+                    </button>
+                  </div>
+                  <div class="work-logo">
+                    <a
+                      href="https://www.deloitte.com/global/en.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./assets/Deloitte_Logo.png"
+                        class="img-fluid"
+                        alt="Deloitte Logo"
+                        width="300"
+                        height="300"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <span class="about-wrapper__cta">
-            <button align="left" id="know-more-button" class="cta-btn cta-btn--hero cta-btn--projects open-button">Know More</button>
-            </span>
-            <dialog class="modal" id="modal">
-              <h2>Here is a summary of my time at Deloitte</h2>
-              <p>My role was characterized by a strong commitment to problem-solving and a deep dedication to improving system capabilities. I played a pivotal role in the successful development and deployment of diverse Salesforce functionalities, demonstrating my expertise in diagnosing, troubleshooting, and resolving technical issues. My approach involved a rigorous root cause analysis and problem-solving methodologies, ensuring that the system operated smoothly.</p>
-              <p>Worked on ~2000 Salesforce Cases/Requests including Change Requests, process enhancements, Data Maintenance & ad-hoc issues.</p>
-              <p>Acted as one of the POC's for Talent Salesforce instance.</p>
-              <p>In addition to technical prowess, I actively contributed to decision-making through data-driven analysis, aligning our solutions with industry best practices. I was instrumental in guiding a Salesforce to ServiceNow Migration project, where I acted as the key point of contact, effectively managing communication and facilitating seamless collaboration between teams for a smooth transition.</p>
-              <p>My time at Deloitte also nurtured my research-oriented mindset, allowing me to streamline processes and author comprehensive Standard Operating Procedure (SOP) documents. These documents not only promoted consistency and efficiency within the organization but also served as valuable references for future projects.</p>
-              <p>Furthermore, I actively participated in fostering a positive and cohesive work environment within the Digital Enablement Team by organizing team-building activities. My experiences at Deloitte were instrumental in honing my professional skills and preparing me for future endeavors in academia and industry.</p>
-              <button class="cta-btn--hero cta-btn--projects close-button">Close</button>
-            </dialog>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          </article>
         </div>
       </div>
     </section>
     <!-- End Workexp Section -->
-    <br><br>
+
+    <!-- Achievements Modal -->
+    <dialog id="achievements-modal" class="modal">
+      <div class="modal-content">
+        <h2>Key Achievements at Deloitte</h2>
+        <ul>
+          <li>
+            Worked on ~2000 Salesforce Cases/Requests including Change Requests,
+            process enhancements, Data Maintenance & ad-hoc issues
+          </li>
+          <li>Acted as one of the POC's for Talent Salesforce instance</li>
+          <li>
+            Led Salesforce to ServiceNow Migration project as key point of
+            contact
+          </li>
+          <li>
+            Authored comprehensive Standard Operating Procedure (SOP) documents
+          </li>
+          <li>
+            Organized team-building activities to foster positive work
+            environment
+          </li>
+        </ul>
+        <button
+          class="cta-btn cta-btn--hero"
+          onclick="document.getElementById('achievements-modal').close()"
+        >
+          Close
+        </button>
+      </div>
+    </dialog>
+
+    <br /><br />
     <!-- Education Section -->
     <section id="education">
       <div class="container">
-        <br><br>
+        <br /><br />
         <h2 class="section-title">Education</h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/vt.png"
-              alt="Profile Image"
-              width="400"
-              height="220"
-            />
+            <a
+              href="https://www.vt.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/vt.png"
+                alt="Profile Image"
+                width="400"
+                height="220"
+              />
+            </a>
           </div>
           <div class="about-wrapper__info">
-            <h2>Master's in Computer Science | Jan. 2023 - Present | Blacksburg, VA</h2>
-            <br>
+            <h2>
+              Master's in Computer Science<br />Jan. 2023 - Dec. 2024 |
+              Blacksburg, VA
+            </h2>
+            <br />
             <p align="justify" class="about-wrapper__info-text">
-              In my pursuit of a Master's in Computer Science at <b>Virginia Tech</b>, my primary focus is on Software Engineering, Artificial Intelligence (AI), and Human-Computer Interaction (HCI). This interdisciplinary approach provides me with a comprehensive understanding of these fields, allowing me to develop expertise in designing, optimizing, and building software systems, working with cutting-edge AI technologies, and ensuring user-friendly and intuitive interfaces. This educational journey equips me with a versatile skill set to contribute effectively to various technology-driven endeavors.
+              In my pursuit of a Master's in Computer Science at
+              <b>Virginia Tech</b>, my primary focus is on Software Engineering,
+              Artificial Intelligence (AI), and Human-Computer Interaction
+              (HCI). This interdisciplinary approach provides me with a
+              comprehensive understanding of these fields, allowing me to
+              develop expertise in designing, optimizing, and building software
+              systems, working with cutting-edge AI technologies, and ensuring
+              user-friendly and intuitive interfaces. This educational journey
+              equips me with a versatile skill set to contribute effectively to
+              various technology-driven endeavors.
             </p>
           </div>
           <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./assets/mrcet.png"
+              src="./assets/JNTUH.png"
               alt="Profile Image"
-              width="220"
-              height="220"
+              width="160"
+              height="160"
             />
           </div>
           <div class="about-wrapper__info">
-            <h2>Bachelor's in Computer Science & Engineering | 2017 - 2021 | Hyderabad, India</h2>
-            <br>
+            <h2>
+              Bachelor's in Computer Science & Engineering<br />Jul. 2017 - Jul.
+              2021 | Hyderabad, India
+            </h2>
+            <br />
             <p align="justify" class="about-wrapper__info-text">
-              My undergraduate journey at <b>Malla Reddy College of Engineering & Technology</b> was a pivotal chapter in my academic and professional development. Pursuing a Bachelor's in Computer Science and Engineering, I gained a strong foundation in core computer science concepts and engineering principles. This comprehensive program not only equipped me with essential technical skills but also nurtured my problem-solving abilities and analytical thinking. Graduating with distinction and holding three on-campus placement offers before graduating, I left the institution with a solid academic background that laid the groundwork for my continued pursuit of excellence in the field of computer science.            </p>
+              My undergraduate journey at
+              <b>Malla Reddy College of Engineering & Technology</b> was a
+              pivotal chapter in my academic and professional development.
+              Pursuing a Bachelor's in Computer Science and Engineering, I
+              gained a strong foundation in core computer science concepts and
+              engineering principles. This comprehensive program not only
+              equipped me with essential technical skills but also nurtured my
+              problem-solving abilities and analytical thinking. Graduating with
+              distinction and holding three on-campus placement offers before
+              graduating, I left the institution with a solid academic
+              background that laid the groundwork for my continued pursuit of
+              excellence in the field of computer science.
+            </p>
           </div>
         </div>
       </div>
@@ -292,9 +467,23 @@
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">TL;DW</h3>
               <p align="justify" class="project-wrapper__text-info">
-                Too Long; Didn't Watch (TL;DW) is an innovative application designed to address the challenges of information overload and shortening attention spans in the digital era. TL;DW enables users to interact with and quickly comprehend the essence of lengthy video content. The technology behind TL;DW integrates large language models (LLMs) and video encoders to create a natural, conversational interface for video analysis. Key features include on-demand video summarization, keyword-based prompt recommendations, and navigation to specific video segments guided by AI-generated responses. 
-                <br><br>
-                <b>Technology and Datasets:</b> The application is built using Streamlit and incorporates Langchain components such as FAISS ChatOpenAI and OpenAIEmbeddings. This setup facilitates an effective method of extracting and concatenating video frame captions and audio transcriptions, enhancing the AI's contextual understanding and interaction accuracy​​.
+                Too Long; Didn't Watch (TL;DW) is an innovative application
+                designed to address the challenges of information overload and
+                shortening attention spans in the digital era. TL;DW enables
+                users to interact with and quickly comprehend the essence of
+                lengthy video content. The technology behind TL;DW integrates
+                large language models (LLMs) and video encoders to create a
+                natural, conversational interface for video analysis. Key
+                features include on-demand video summarization, keyword-based
+                prompt recommendations, and navigation to specific video
+                segments guided by AI-generated responses.
+                <br /><br />
+                <b>Technology and Datasets:</b> The application is built using
+                Streamlit and incorporates Langchain components such as FAISS
+                ChatOpenAI and OpenAIEmbeddings. This setup facilitates an
+                effective method of extracting and concatenating video frame
+                captions and audio transcriptions, enhancing the AI's contextual
+                understanding and interaction accuracy​​.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
@@ -304,14 +493,21 @@
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="https://www.youtube.com/watch?v=AZgzeEoIaEM" target="_blank" class="cta-btn text-color-main"
+                <a
+                  href="https://www.youtube.com/watch?v=AZgzeEoIaEM"
+                  target="_blank"
+                  class="cta-btn text-color-main"
                   >Demo Video</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="https://tldwapp2.streamlit.app" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://tldwapp2.streamlit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/tldw.png"
@@ -331,8 +527,25 @@
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Know My Recipe</h3>
               <p align="justify" class="project-wrapper__text-info">
-                The ongoing Know My Recipe project is an innovative social media platform designed to revolutionize the way food enthusiasts share and discover recipes. Leveraging the power of artificial intelligence, this advanced solution combines social media functionalities with cutting-edge technology to deliver an unparalleled culinary experience. Know My Recipe offers AI-powered recipe recommendations tailored to users' preferences and dietary restrictions, and an interactive recipe creation tool that provides step-by-step guidance and real-time ingredient substitution suggestions.                <br><br>
-                <b>Technology and Datasets:</b> The application is built using a modern tech stack comprising JavaScript, Express.js, React.js, MongoDB, and Node.js. The backend is hosted on Heroku, while the frontend leverages React.js for a smooth and responsive user experience. OpenAI's language models are integrated to power the AI-driven features, enabling natural language processing and intelligent recipe recommendations. The application also utilizes GitLab for version control and collaboration among developers.
+                The ongoing Know My Recipe project is an innovative social media
+                platform designed to revolutionize the way food enthusiasts
+                share and discover recipes. Leveraging the power of artificial
+                intelligence, this advanced solution combines social media
+                functionalities with cutting-edge technology to deliver an
+                unparalleled culinary experience. Know My Recipe offers
+                AI-powered recipe recommendations tailored to users' preferences
+                and dietary restrictions, and an interactive recipe creation
+                tool that provides step-by-step guidance and real-time
+                ingredient substitution suggestions. <br /><br />
+                <b>Technology and Datasets:</b> The application is built using a
+                modern tech stack comprising JavaScript, Express.js, React.js,
+                MongoDB, and Node.js. The backend is hosted on Heroku, while the
+                frontend leverages React.js for a smooth and responsive user
+                experience. OpenAI's language models are integrated to power the
+                AI-driven features, enabling natural language processing and
+                intelligent recipe recommendations. The application also
+                utilizes GitLab for version control and collaboration among
+                developers.
               </p>
               <!-- <div class="project-wrapper__text-btns">
                 <a
@@ -349,7 +562,11 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="https://tldwapp2.streamlit.app" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://tldwapp2.streamlit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/recipe.png"
@@ -369,9 +586,26 @@
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">IntelliMeet</h3>
               <p align="justify" class="project-wrapper__text-info">
-                In this academic project, I led the development of an end-to-end decentralized video conferencing application with advanced AI capabilities. The application aimed to provide users with a seamless and innovative video conferencing experience. Leveraging cutting-edge technologies such as Python, PyTorch, OpenCV, and OpenAI, we incorporated features like facial analysis, speech-text conversion, and personalized attentiveness reports. This not only improved the quality of communication but also enhanced user engagement during video conferences. Additionally, we integrated Socket.IO and PyAudio to facilitate real-time communication improvements, ensuring smooth and efficient interactions among users.
-                <br><br>
-                <b>Technology and Datasets:</b> We harnessed Python, PyTorch, OpenCV, and OpenAI for AI-driven functionalities. Datasets such as WIDER, IJB-C, and MuST-C were utilized to train and fine-tune AI models for enhanced performance. This project showcased my proficiency in AI technologies and my ability to apply them to create user-centric solutions for real-world communication challenges.
+                In this academic project, I led the development of an end-to-end
+                decentralized video conferencing application with advanced AI
+                capabilities. The application aimed to provide users with a
+                seamless and innovative video conferencing experience.
+                Leveraging cutting-edge technologies such as Python, PyTorch,
+                OpenCV, and OpenAI, we incorporated features like facial
+                analysis, speech-text conversion, and personalized attentiveness
+                reports. This not only improved the quality of communication but
+                also enhanced user engagement during video conferences.
+                Additionally, we integrated Socket.IO and PyAudio to facilitate
+                real-time communication improvements, ensuring smooth and
+                efficient interactions among users.
+                <br /><br />
+                <b>Technology and Datasets:</b> We harnessed Python, PyTorch,
+                OpenCV, and OpenAI for AI-driven functionalities. Datasets such
+                as WIDER, IJB-C, and MuST-C were utilized to train and fine-tune
+                AI models for enhanced performance. This project showcased my
+                proficiency in AI technologies and my ability to apply them to
+                create user-centric solutions for real-world communication
+                challenges.
               </p>
               <!-- <div class="project-wrapper__text-btns">
                 <a
@@ -388,7 +622,11 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="https:/github.com/niknarra" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https:/github.com/niknarra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/Intellimeet.png"
@@ -406,11 +644,30 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Personalized Spotify Playlist Generator</h3>
+              <h3 class="project-wrapper__text-title">
+                Personalized Spotify Playlist Generator
+              </h3>
               <p align="justify" class="project-wrapper__text-info">
-                As a personal project, I designed and developed a personalized playlist generator that caters to individual user preferences. Using Python, I seamlessly integrated the spotipy library for Python and employed HTTP Requests to ensure secure user data retrieval and privacy. The goal was to create a music recommendation system that could curate playlists based on users' musical tastes and preferences. To accomplish this, a robust backend was created using Flask, a Python web framework, to handle user requests and interact with the Spotify Web API. This project not only demonstrated my programming skills but also my ability to build practical applications that enhance user experiences.
-                  <br><br>
-                <b>Technology and Datasets:</b> The project utilized Python, spotipy library, HTTP Requests, and Flask to build the playlist generator and backend. It showcased my proficiency in web development and API integration. The dataset used primarily consisted of user data and music preferences from the Spotify Web API, enabling the system to generate tailored playlists based on individual user inputs.
+                As a personal project, I designed and developed a personalized
+                playlist generator that caters to individual user preferences.
+                Using Python, I seamlessly integrated the spotipy library for
+                Python and employed HTTP Requests to ensure secure user data
+                retrieval and privacy. The goal was to create a music
+                recommendation system that could curate playlists based on
+                users' musical tastes and preferences. To accomplish this, a
+                robust backend was created using Flask, a Python web framework,
+                to handle user requests and interact with the Spotify Web API.
+                This project not only demonstrated my programming skills but
+                also my ability to build practical applications that enhance
+                user experiences.
+                <br /><br />
+                <b>Technology and Datasets:</b> The project utilized Python,
+                spotipy library, HTTP Requests, and Flask to build the playlist
+                generator and backend. It showcased my proficiency in web
+                development and API integration. The dataset used primarily
+                consisted of user data and music preferences from the Spotify
+                Web API, enabling the system to generate tailored playlists
+                based on individual user inputs.
               </p>
               <!-- <div class="project-wrapper__text-btns">
                 <a
@@ -445,11 +702,30 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">COVID-19 Outbreak Predictor</h3>
+              <h3 class="project-wrapper__text-title">
+                COVID-19 Outbreak Predictor
+              </h3>
               <p align="justify" class="project-wrapper__text-info">
-                In this academic project, I developed a comprehensive dashboard that provided real-time statistics on COVID-19 cases and had the capability to predict the number of cases for the following week. Leveraging a wide range of technologies, including Python, Prophet, Matplotlib, NumPy, and Pandas, along with datasets from reputable sources tracking COVID-19 cases, we aimed to create a data-driven tool for monitoring and predicting the spread of the pandemic. This dashboard not only offered valuable insights into the evolving situation but also contributed to informed decision-making during the global health crisis.
-                <br><br>
-                <b>Technology and Datasets:</b> The project utilized Python for data analysis and visualization, including libraries like Prophet for time series forecasting, Matplotlib for data visualization, and NumPy and Pandas for data manipulation. Datasets from trusted organizations tracking COVID-19 cases worldwide were used as the primary data source. This project showcased my proficiency in data analytics and my commitment to leveraging technology for addressing critical real-world challenges.
+                In this academic project, I developed a comprehensive dashboard
+                that provided real-time statistics on COVID-19 cases and had the
+                capability to predict the number of cases for the following
+                week. Leveraging a wide range of technologies, including Python,
+                Prophet, Matplotlib, NumPy, and Pandas, along with datasets from
+                reputable sources tracking COVID-19 cases, we aimed to create a
+                data-driven tool for monitoring and predicting the spread of the
+                pandemic. This dashboard not only offered valuable insights into
+                the evolving situation but also contributed to informed
+                decision-making during the global health crisis.
+                <br /><br />
+                <b>Technology and Datasets:</b> The project utilized Python for
+                data analysis and visualization, including libraries like
+                Prophet for time series forecasting, Matplotlib for data
+                visualization, and NumPy and Pandas for data manipulation.
+                Datasets from trusted organizations tracking COVID-19 cases
+                worldwide were used as the primary data source. This project
+                showcased my proficiency in data analytics and my commitment to
+                leveraging technology for addressing critical real-world
+                challenges.
               </p>
               <!-- <div class="project-wrapper__text-btns">
                 <a
@@ -466,7 +742,11 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="https://github.com/niknarra" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/niknarra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/c19.png"
@@ -479,7 +759,10 @@
               </a>
             </div>
           </article>
-          <p align="center" class="project-wrapper__text-info"> <b>Fun Fact:</b> I used AI to generate the images you see for each project! </p>
+          <p align="center" class="project-wrapper__text-info">
+            <b>Fun Fact:</b> I used AI to generate the images you see for each
+            project!
+          </p>
           <!-- /END Project -->
         </div>
       </div>
@@ -491,8 +774,9 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Feel free to connect with me on LinkedIn or drop an email using the links below.
-            <br><br>
+          <p class="contact-wrapper__text">
+            Feel free to connect with me on LinkedIn or drop an email using the
+            links below. <br /><br />
             I'm looking forward to connecting with you!
           </p>
           <!--<a href="#" class="cta-btn cta-btn--resume">Download Resume</a>-->
@@ -552,6 +836,14 @@
           >
             <i class="fa fa-github"></i>
           </a>
+          <a
+            href="https://www.npmjs.com/~niknarra"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="npm"
+          >
+            <i class="fab fa-npm"></i>
+          </a>
         </div>
         <hr />
         <p class="footer__text">
@@ -562,19 +854,45 @@
             rel="noopener noreferrer"
             >Nikhil Narra</a
           >. <br />Made with &hearts;
-          <br>
-          Last Updated on: March 1, 2024
+          <br />
+          Last Updated on: May 29, 2025
         </p>
       </div>
-      <br>
-      <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fniknarra%2Fniknarra.github.io&labelColor=%232ccce4&countColor=%23c13560" alt="visitor badge"/>    </footer>
+      <br />
+      <img
+        src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fniknarra%2Fniknarra.github.io&labelColor=%232ccce4&countColor=%23c13560"
+        alt="visitor badge"
+      />
+    </footer>
     <!-- END Footer Section -->
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
     <script type="text/javascript" src="./javascript/buttons.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const workSwiper = new Swiper(".work-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -998,12 +998,17 @@ section .row span {
 }
 
 .tech-stack i {
-  font-size: 2.4rem;
+  font-size: 2.4rem !important;
   color: #5b86e5;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
   z-index: 2;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-stack i:hover {
@@ -1071,7 +1076,14 @@ section .row span {
   }
 
   .tech-stack i {
-    font-size: 2rem;
+    font-size: 2rem !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .tech-stack .custom-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -1131,7 +1143,14 @@ section .row span {
   }
 
   .tech-stack i {
-    font-size: 2rem;
+    font-size: 2rem !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .tech-stack .custom-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
 

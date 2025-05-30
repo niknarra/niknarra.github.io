@@ -242,22 +242,16 @@ a:hover {
 .social-links a:hover {
   transform: scale(1.1) translateY(-2px);
 }
-.social-links a:hover .fa-twitter {
-  color: #00acee;
-}
-.social-links a:hover .fa-instagram {
-  color: #c13584;
+.social-links a:hover .fa-envelope {
+  color: #ea4335;
 }
 .social-links a:hover .fa-linkedin {
-  color: #4875b4;
-}
-.social-links a:hover .fa-codepen {
-  color: #212121;
+  color: #0077b5;
 }
 .social-links a:hover .fa-github {
   color: #6e5494;
 }
-.social-links a:hover .fa-npm {
+.social-links a:hover .fab.fa-npm {
   color: #cb3837;
 }
 .back-to-top i {
@@ -889,6 +883,7 @@ section .row span {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .work-logo img {
@@ -990,4 +985,152 @@ section .row span {
 
 .work-description a:visited {
   color: #5b86e5; /* Same as unvisited links */
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-stack i {
+  font-size: 2.4rem;
+  color: #5b86e5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-stack i:hover {
+  transform: translateY(-3px);
+  color: #36d1dc;
+}
+
+/* Specific colors for tech stack icons */
+.tech-stack .fa-java {
+  color: #007396;
+}
+.tech-stack .fa-leaf {
+  color: #6db33f;
+}
+.tech-stack .fa-angular {
+  color: #dd0031;
+}
+.tech-stack .fa-aws {
+  color: #232f3e;
+}
+.tech-stack .fa-jenkins {
+  color: #d24939;
+}
+.tech-stack .fa-box {
+  color: #0052cc;
+}
+.tech-stack .fa-shield-alt {
+  color: #f44d67;
+}
+.tech-stack .fa-bitbucket {
+  color: #0052cc;
+}
+/* VT Visualization Tech Stack Colors */
+.tech-stack .fa-html5 {
+  color: #e34f26;
+}
+.tech-stack .fa-css3-alt {
+  color: #264de4;
+}
+.tech-stack .fa-js {
+  color: #f7df1e;
+}
+.tech-stack .fa-react {
+  color: #61dafb;
+}
+.tech-stack .fa-node-js {
+  color: #339933;
+}
+.tech-stack .fa-cube {
+  color: #4a90e2;
+}
+.tech-stack .fa-vr-cardboard {
+  color: #ff4081;
+}
+.tech-stack .fa-cubes {
+  color: #4a90e2;
+}
+.tech-stack .fa-github {
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    gap: 1.5rem;
+  }
+
+  .tech-stack i {
+    font-size: 2rem;
+  }
+}
+
+.tech-stack .custom-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #5b86e5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-stack .custom-icon:hover {
+  transform: translateY(-3px);
+  color: #36d1dc;
+}
+
+/* VT Visualization Tech Stack Colors */
+.tech-stack .fa-html5 {
+  color: #e34f26;
+}
+.tech-stack .fa-css3-alt {
+  color: #264de4;
+}
+.tech-stack .fa-js {
+  color: #f7df1e;
+}
+.tech-stack .fa-react {
+  color: #61dafb;
+}
+.tech-stack .fa-node-js {
+  color: #339933;
+}
+.tech-stack .custom-icon[title="X3D"] {
+  color: #4a90e2;
+}
+.tech-stack .custom-icon[title="X3DOM"] {
+  color: #4a90e2;
+}
+.tech-stack .fa-vr-cardboard {
+  color: #ff4081;
+}
+.tech-stack .fa-cube {
+  color: #4a90e2;
+}
+.tech-stack .fa-github {
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    gap: 1.5rem;
+  }
+
+  .tech-stack i {
+    font-size: 2rem;
+  }
 }

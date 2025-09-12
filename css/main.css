@@ -1205,3 +1205,231 @@ section .row span {
     font-size: 1.5rem;
   }
 }
+
+/* Achievements Section Styles */
+.achievements-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.tab-btn {
+  background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(91, 134, 229, 0.3);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #5b86e5 0%, #36d1dc 100%);
+  box-shadow: 0 8px 15px rgba(91, 134, 229, 0.4);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Awards Grid Styles */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.award-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #5b86e5;
+}
+
+.award-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.award-header {
+  margin-bottom: 1rem;
+}
+
+.award-header h3 {
+  color: #272341;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.award-date {
+  color: #5b86e5;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.award-description p {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Mobile Responsiveness for Achievements */
+@media (max-width: 768px) {
+  .achievements-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-btn {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .award-item {
+    padding: 1.5rem;
+  }
+
+  .award-header h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Open Source Section Styles */
+#opensource {
+  background-color: #e5e5e5;
+  color: #272341;
+  margin-top: -15rem;
+  padding-top: 15rem;
+}
+
+@media (max-width: 75em) {
+  #opensource {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #opensource {
+    padding-bottom: 1px;
+  }
+}
+
+#opensource .project-wrapper {
+  margin-bottom: 15rem;
+}
+
+@media (max-width: 37.5em) {
+  #opensource .project-wrapper {
+    margin-bottom: 0rem;
+  }
+}
+
+#opensource .project-wrapper .row {
+  margin: 0;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 37.5em) {
+  #opensource .project-wrapper .row {
+    margin-bottom: 4rem;
+  }
+}
+
+#opensource .project-wrapper__text {
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 75em) {
+  #opensource .project-wrapper__text {
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #opensource .project-wrapper__text {
+    margin-bottom: 2.5rem;
+  }
+}
+
+#opensource .project-wrapper__text-title {
+  font-weight: bold;
+  margin-bottom: 1.8rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 37.5em) {
+  #opensource .project-wrapper__text-title {
+    font-size: 2rem;
+  }
+}
+
+#opensource .project-wrapper__text-info {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+#opensource .project-wrapper__text-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#opensource .project-wrapper__image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 75em) {
+  #opensource .project-wrapper__image {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#opensource .project-wrapper__image .thumbnail {
+  border: none;
+  box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4), -5px -5px 15px 7px #fff;
+}
+
+#opensource .project-wrapper__image .thumbnail .img-fluid {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+@media (max-width: 37.5em) {
+  #opensource .project-wrapper__image .thumbnail {
+    box-shadow: none;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 3.2rem;
+    transform: none;
+  }
+}

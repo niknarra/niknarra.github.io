@@ -623,6 +623,7 @@ section .row span {
 #projects .project-wrapper__image {
   width: 90%;
   margin: 0 auto;
+  align-self: center;
 }
 @media (max-width: 75em) {
   #projects .project-wrapper__image {

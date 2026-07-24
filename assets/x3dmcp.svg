@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 767" role="img" aria-label="x3d-mcp project banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1c24"/>
+      <stop offset="1" stop-color="#3a0d0d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#800000"/>
+      <stop offset="1" stop-color="#ff6b6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1366" height="767" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#ff9b9b" stroke-width="2" fill="none">
+    <path d="M980 160 L1140 250 L1140 430 L980 520 L820 430 L820 250 Z"/>
+    <path d="M980 160 L980 340 M820 250 L980 340 M1140 250 L980 340 M980 340 L980 520"/>
+    <circle cx="980" cy="160" r="8" fill="#ff9b9b"/>
+    <circle cx="1140" cy="250" r="8" fill="#ff9b9b"/>
+    <circle cx="820" cy="250" r="8" fill="#ff9b9b"/>
+    <circle cx="980" cy="520" r="8" fill="#ff9b9b"/>
+  </g>
+  <rect x="90" y="205" width="120" height="10" rx="5" fill="url(#accent)"/>
+  <text x="90" y="300" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="bold" fill="#ffffff">x3d-mcp</text>
+  <text x="90" y="370" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#e8c9c9">MCP server for AI-generated 3D scenes</text>
+  <text x="90" y="425" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#b89b9b">Merged into the Web3D Consortium's official tooling</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#ffffff">
+    <rect x="90" y="480" width="120" height="46" rx="23" fill="#800000"/>
+    <text x="150" y="511" text-anchor="middle">Python</text>
+    <rect x="226" y="480" width="140" height="46" rx="23" fill="#800000"/>
+    <text x="296" y="511" text-anchor="middle">FastMCP</text>
+    <rect x="382" y="480" width="150" height="46" rx="23" fill="#800000"/>
+    <text x="457" y="511" text-anchor="middle">X3D / ISO</text>
+    <rect x="548" y="480" width="100" height="46" rx="23" fill="#800000"/>
+    <text x="598" y="511" text-anchor="middle">LLMs</text>
+  </g>
+</svg>

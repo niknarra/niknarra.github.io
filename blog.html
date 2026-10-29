@@ -1,278 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/e20654488d.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-    <title>Nikhil Narra | Blog</title>
-
-    <meta name="keywords" content="nikhilnarra, Nikhil Narra, CS, blog" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07111f" />
     <meta
       name="description"
-      content="Nikhil Narra's Blog - Thoughts on Technology, AI, and Software Development"
+      content="Writing by software engineer Nikhil Narra about backend systems, developer tools, AI, Web3D, and the practice of learning."
     />
+    <title>Writing | Nikhil Narra</title>
+    <link rel="canonical" href="https://niknarra.github.io/blog.html" />
     <link rel="icon" type="image/png" href="./assets/nnlogo.png" />
-    <meta name="theme-color" content="#800000" />
-
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="./css/main.css?v=20261029-6" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://niknarra.github.io/blog.html" />
-    <meta property="og:title" content="Nikhil Narra | Blog" />
+    <meta property="og:title" content="Writing | Nikhil Narra" />
     <meta
       property="og:description"
-      content="Nikhil Narra's Blog - Thoughts on Technology, AI, and Software Development"
+      content="Notes on backend systems, developer tools, AI, Web3D, and learning."
     />
     <meta
       property="og:image"
-      content="https://github.com/niknarra/niknarra.github.io/blob/master/assets/home.png"
+      content="https://niknarra.github.io/assets/social-card.png"
     />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://niknarra.github.io/blog.html"
-    />
-    <meta property="twitter:title" content="Nikhil Narra | Blog" />
-    <meta
-      property="twitter:description"
-      content="Nikhil Narra's Blog - Thoughts on Technology, AI, and Software Development"
-    />
-    <meta
-      property="twitter:image"
-      content="https://github.com/niknarra/niknarra.github.io/blob/master/assets/home.png"
-    />
-
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Marked.js for Markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    <!-- Blog Header Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Welcome to my <span class="text-color-main">Blog</span>
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="index.html">Back to Home</a>
-        </p>
-      </section>
-    </div>
-
-    <!-- Blog Posts Section -->
-    <section id="blog-posts">
-      <div class="container">
-        <div class="blog-wrapper" id="blog-posts-container">
-          <!-- Posts will be loaded here dynamically -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header is-scrolled" data-header>
+      <div class="shell nav-shell">
+        <a class="brand" href="index.html" aria-label="Nikhil Narra, home">
+          <img class="brand-logo" src="./assets/NN_Updated_logo.png" alt="" width="44" height="44" />
+          <span class="brand-name">Nikhil Narra</span>
         </a>
-        <div class="social-links">
-          <a
-            href="mailto:nikhilnarra@vt.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="email"
-          >
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nikhilnarra/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa fa-github"></i>
-          </a>
-          <a
-            href="https://www.npmjs.com/~niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="npm"
-          >
-            <i class="fab fa-npm"></i>
-          </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+          data-nav-toggle
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary" data-nav>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#recognition">Recognition</a>
+          <a href="blog.html" aria-current="page">Writing</a>
+          <a class="nav-cta" href="mailto:nikhil20500@gmail.com">Let&rsquo;s talk</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="blog-main" id="main-content">
+      <section class="blog-hero">
+        <div class="shell reveal">
+          <p class="eyebrow">Writing</p>
+          <h1>Notes from building and learning.</h1>
+          <p>
+            Thoughts on software engineering, developer tools, AI-assisted
+            systems, Web3D, and the habits that make technical work better.
+          </p>
         </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Designed by
-          <a
-            href="https://github.com/niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Nikhil Narra</a
-          >. <br />Made with &hearts;
-          <br />
-          Last Updated on: May 29, 2025
-        </p>
+      </section>
+
+      <section class="blog-index" aria-labelledby="articles-title">
+        <div class="shell blog-index-grid">
+          <p class="blog-index-label" id="articles-title">All articles</p>
+          <div class="post-list">
+            <a class="post-card reveal" href="blog/dsa-journey.html">
+              <div class="post-card-meta">
+                <time datetime="2025-05-29">May 29, 2025</time>
+                <p>7 min read</p>
+              </div>
+              <div>
+                <h2>My love-hate, ever-evolving journey with data structures and algorithms</h2>
+                <p>
+                  Why mastery is not a finish line, and how deliberate practice
+                  turns abstract concepts into better engineering judgment.
+                </p>
+              </div>
+              <span class="post-card-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html" aria-label="Nikhil Narra, home">
+            <span class="brand-mark" aria-hidden="true">NN</span>
+            <span class="brand-name">Nikhil Narra</span>
+          </a>
+          <p>Backend systems. Developer tools. Thoughtful engineering.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="mailto:nikhil20500@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/nikhilnarra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/niknarra" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.npmjs.com/~niknarra" target="_blank" rel="noopener noreferrer">npm</a>
+        </nav>
+        <p class="copyright">&copy; <span data-year></span> Nikhil Narra</p>
       </div>
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Function to parse frontmatter
-      function parseFrontmatter(content) {
-        const frontmatterRegex = /^---\n([\s\S]*?)\n---/;
-        const match = content.match(frontmatterRegex);
-
-        if (match) {
-          const frontmatter = match[1];
-          const metadata = {};
-
-          frontmatter.split("\n").forEach((line) => {
-            const [key, ...valueParts] = line.split(":");
-            if (key && valueParts.length) {
-              const value = valueParts.join(":").trim();
-              metadata[key.trim()] = value.replace(/^["']|["']$/g, "");
-            }
-          });
-
-          return {
-            metadata,
-            content: content.slice(match[0].length).trim(),
-          };
-        }
-
-        return { metadata: {}, content };
-      }
-
-      // Function to load and render blog posts
-      async function loadBlogPosts() {
-        const container = document.getElementById("blog-posts-container");
-
-        try {
-          // Fetch the list of markdown files
-          const response = await fetch("blog/posts/dsa-journey.md");
-          const markdownContent = await response.text();
-
-          // Parse frontmatter and content
-          const { metadata, content: parsedContent } =
-            parseFrontmatter(markdownContent);
-
-          // Remove the first heading from the content if it matches the title
-          const contentWithoutTitle = parsedContent
-            .replace(/^#\s+.*$/m, "")
-            .trim();
-
-          // Convert markdown to HTML
-          const htmlContent = marked.parse(contentWithoutTitle);
-
-          // Create blog post element
-          const article = document.createElement("article");
-          article.className = "blog-post";
-
-          // Add title and date
-          article.innerHTML = `
-            <button class="blog-post__expand" title="Expand to full screen">
-              <i class="fas fa-expand"></i>
-            </button>
-            <div class="blog-post__content collapsed">
-              <h1 class="blog-post__title">${metadata.title}</h1>
-              <div class="blog-post__meta">
-                <span class="blog-post__date">${metadata.date}</span>
-                <span class="blog-post__author">By ${
-                  metadata.author || "Nikhil Narra"
-                }</span>
-              </div>
-              ${htmlContent}
-            </div>
-            <button class="blog-post__read-more">Read More</button>
-            <button class="blog-post__close" style="display: none;">×</button>
-          `;
-
-          // Add click handler for the expand button
-          const expandBtn = article.querySelector(".blog-post__expand");
-          const readMoreBtn = article.querySelector(".blog-post__read-more");
-          const closeBtn = article.querySelector(".blog-post__close");
-          const content = article.querySelector(".blog-post__content");
-
-          const closeArticle = () => {
-            article.classList.remove("expanded");
-            content.classList.add("collapsed");
-            expandBtn.style.display = "block";
-            readMoreBtn.style.display = "inline-block";
-            closeBtn.style.display = "none";
-            document.body.style.overflow = "";
-          };
-
-          expandBtn.addEventListener("click", () => {
-            article.classList.add("expanded");
-            content.classList.remove("collapsed");
-            expandBtn.style.display = "none";
-            readMoreBtn.style.display = "none";
-            closeBtn.style.display = "block";
-            document.body.style.overflow = "hidden";
-            window.scrollTo(0, 0);
-          });
-
-          readMoreBtn.addEventListener("click", () => {
-            article.classList.add("expanded");
-            content.classList.remove("collapsed");
-            expandBtn.style.display = "none";
-            readMoreBtn.style.display = "none";
-            closeBtn.style.display = "block";
-            document.body.style.overflow = "hidden";
-            window.scrollTo(0, 0);
-          });
-
-          closeBtn.addEventListener("click", closeArticle);
-
-          // Add event listener for Escape key
-          document.addEventListener("keydown", (event) => {
-            if (
-              event.key === "Escape" &&
-              article.classList.contains("expanded")
-            ) {
-              closeArticle();
-            }
-          });
-
-          container.appendChild(article);
-        } catch (error) {
-          console.error("Error loading blog posts:", error);
-          container.innerHTML =
-            "<p>Error loading blog posts. Please try again later.</p>";
-        }
-      }
-
-      // Load blog posts when the page loads
-      document.addEventListener("DOMContentLoaded", loadBlogPosts);
-    </script>
+    <script src="./javascript/main.js?v=20261029-2" defer></script>
   </body>
 </html>

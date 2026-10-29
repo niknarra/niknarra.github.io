@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niknarra.github.io/sitemap.xml

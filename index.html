@@ -1,1246 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/e20654488d.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>Nikhil Narra | Developer</title>
-
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="nikhilnarra, Nikhil Narra, CS" />
-
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Nikhil Narra | Portfolio" />
-
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#68152f" />
+    <meta name="description" content="Nikhil Narra is a high-ownership software engineer who takes products from first working version through production, edge cases, and scale." />
+    <title>Nikhil Narra | Full-Stack Software Engineer</title>
+    <link rel="canonical" href="https://niknarra.github.io/" />
     <link rel="icon" type="image/png" href="./assets/nnlogo.png" />
-
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#800000" />
-
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css" />
+    <link rel="stylesheet" href="./css/portfolio.css?v=20261029-11" />
     <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://niknarra.github.io" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="Nikhil Narra | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta
-      property="og:description"
-      content="Nikhil Narra's portfolio website"
-    />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="https://github.com/niknarra/niknarra.github.io/blob/master/assets/home.png"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://niknarra.github.io" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="Nikhil Narra | Portfolio" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Nikhil Narra's personal website"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://github.com/niknarra/niknarra.github.io/blob/master/assets/home.png"
-    />
-
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- Swiper.js CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Swiper.js JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Nikhil Narra</span>
-          <br />
-          Nice to meet you!
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about"
-            >Let me introduce myself</a
-          >
-          <a
-            class="cta-btn cta-btn--hero"
-            href="blog.html"
-            style="margin-left: 10px"
-            >Go to Blog</a
-          >
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
-    <!-- /END Hero Section -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.jpeg"
-              alt="Profile Image"
-              width="450"
-              height="450"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p align="justify" class="about-wrapper__info-text">
-              I'm Nikhil Narra, a software developer at Blackhawk Network,
-              where I build backend and platform infrastructure for gift card
-              commerce systems - event-driven pipelines, distributed logging,
-              and cloud migrations on AWS. I hold a Master of Science in
-              Computer Science from Virginia Tech (GPA 3.97), where I worked
-              on 3D web technologies with Advanced Research Computing,
-              published two papers at ACM Web3D '25, and won 3rd place in the
-              Tool/Pipeline Innovation of the Year category at the Web3D '25
-              Tools Competition. My open-source work includes X3Test and
-              x3d-mcp, an MCP server merged into the Web3D Consortium's
-              official tooling. Before graduate school, I spent a year and a
-              half at Deloitte building Salesforce and RPA automation.
-            </p>
-            <p align="justify" class="about-wrapper__info-text">
-              Outside of work and academics, I have a diverse range of interests
-              and hobbies that help me maintain a balanced and creative life. I
-              am an avid car enthusiast and enjoy immersing myself in the world
-              of automotive design and engineering. Additionally, I have a
-              creative side that I explore through writing screenplays and
-              diving into captivating books. When it's time to unwind, you'll
-              often find me engaged in video games.
-            </p>
-            <span class="about-wrapper__cta">
-              <a
-                href="assets/Nikhil's Resume.pdf"
-                target="_blank"
-                class="cta-btn cta-btn--resume"
-                >View Resume</a
-              >
-              <a
-                href="blog.html"
-                class="cta-btn cta-btn--resume"
-                style="margin-left: 10px"
-                >View Blog</a
-              >
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
-    <!--Work Section-->
-    <section id="workexp">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Work Experience</h2>
-
-          <div class="swiper work-swiper">
-            <div class="swiper-wrapper">
-              <!-- Blackhawk Network -->
-              <div class="swiper-slide">
-                <div class="work-content">
-                  <div class="work-header">
-                    <h2>Blackhawk Network</h2>
-                    <h3>Software Developer</h3>
-                    <p class="work-location">
-                      Apr. 2025 - Present | Coppell, TX
-                    </p>
-                  </div>
-                  <div class="work-description">
-                    <p align="justify">
-                      As a <b>Software Developer</b> at Blackhawk Network, I
-                      build backend and platform infrastructure for the
-                      company's gift card commerce systems. My work spans
-                      replacing batch jobs with event-driven pipelines (AWS
-                      SQS, EventBridge), building a distributed logging
-                      framework with correlation-ID tracing across 15+
-                      microservices, migrating legacy applications to ECS with
-                      blue/green deployments and Jenkins CI/CD, and onboarding
-                      enterprise clients onto the core Java backend and Angular
-                      storefront.
-                    </p>
-                  </div>
-                  <div class="tech-stack">
-                    <!-- Programming Languages -->
-                    <span><i class="fab fa-java" title="Java"></i></span>
-                    <!-- Frameworks -->
-                    <span><i class="fas fa-leaf" title="Spring Boot"></i></span>
-                    <span
-                      ><i class="fab fa-angular" title="AngularJS"></i
-                    ></span>
-                    <!-- Cloud & DevOps -->
-                    <span><i class="fab fa-aws" title="AWS"></i></span>
-                    <span><i class="fab fa-jenkins" title="Jenkins"></i></span>
-                    <span><i class="fas fa-box" title="Artifactory"></i></span>
-                    <!-- Code Quality & Version Control -->
-                    <span
-                      ><i class="fab fa-bitbucket" title="Bitbucket"></i
-                    ></span>
-                  </div>
-                  <div class="work-logo">
-                    <a
-                      href="https://www.blackhawknetwork.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="./assets/bhn.png"
-                        class="img-fluid"
-                        alt="Blackhawk Network Logo"
-                        width="250"
-                        height="250"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Virginia Tech - Visualization Intern -->
-              <div class="swiper-slide">
-                <div class="work-content">
-                  <div class="work-header">
-                    <h2>Virginia Tech</h2>
-                    <h3>Software Developer (Part-time)</h3>
-                    <p class="work-location">
-                      Dec. 2023 - Apr. 2025 | Blacksburg, VA
-                    </p>
-                  </div>
-                  <div class="work-description">
-                    <p align="justify">
-                      As a <b>Software Developer (Part-time)</b> with
-                      <b>Virginia Tech's Advanced Research Computing</b>,
-                      working alongside
-                      <a
-                        href="https://people.cs.vt.edu/~npolys/"
-                        target="_blank"
-                        >Dr. Nicholas Polys</a
-                      >, I built high-performance web and immersive 3D
-                      applications: contributed VR headset support to the
-                      open-source X3DOM library, rebuilt coursework simulations
-                      into a React platform, developed a RAG-based chatbot over
-                      the university's knowledge base, and created X3Test - an
-                      automated benchmarking framework that led to two
-                      peer-reviewed publications at ACM Web3D '25.
-                    </p>
-                    <div class="tech-stack">
-                      <!-- Frontend -->
-                      <span><i class="fab fa-html5" title="HTML5"></i></span>
-                      <span><i class="fab fa-css3-alt" title="CSS3"></i></span>
-                      <span><i class="fab fa-js" title="JavaScript"></i></span>
-                      <span><i class="fab fa-react" title="React.js"></i></span>
-                      <!-- Backend -->
-                      <span
-                        ><i class="fab fa-node-js" title="Node.js"></i
-                      ></span>
-                      <!-- 3D & VR -->
-                      <span class="custom-icon" title="X3D">
-                        <svg
-                          viewBox="0 0 70 48"
-                          width="24"
-                          height="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="2"
-                            y="40"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="40"
-                            fill="#8B2323"
-                            font-weight="bold"
-                          >
-                            X
-                          </text>
-                          <text
-                            x="22"
-                            y="40"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="40"
-                            fill="#1CA085"
-                            font-weight="bold"
-                          >
-                            3
-                          </text>
-                          <text
-                            x="42"
-                            y="40"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="40"
-                            fill="#2296D2"
-                            font-weight="bold"
-                          >
-                            D
-                          </text>
-                          <line
-                            x1="10"
-                            y1="0"
-                            x2="60"
-                            y2="48"
-                            stroke="#8B2323"
-                            stroke-width="3"
-                          />
-                        </svg>
-                      </span>
-                      <span class="custom-icon" title="X3DOM">
-                        <svg
-                          viewBox="0 0 90 32"
-                          width="48"
-                          height="18"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="0"
-                            y="24"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="24"
-                            fill="#2873A9"
-                            font-weight="bold"
-                          >
-                            x3dom
-                          </text>
-                        </svg>
-                      </span>
-                      <span
-                        ><i
-                          class="fas fa-vr-cardboard"
-                          title="VR Development"
-                        ></i
-                      ></span>
-                      <!-- Version Control -->
-                      <span><i class="fab fa-github" title="GitHub"></i></span>
-                    </div>
-                  </div>
-                  <div class="work-logo">
-                    <a
-                      href="https://arc.vt.edu/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="./assets/vt.png"
-                        class="img-fluid"
-                        alt="Virginia Tech Logo"
-                        width="300"
-                        height="300"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Virginia Tech - Computer Scientist -->
-              <div class="swiper-slide">
-                <div class="work-content">
-                  <div class="work-header">
-                    <h2>Virginia Tech</h2>
-                    <h3>Software Developer (Part-time)</h3>
-                    <p class="work-location">
-                      Jan. 2023 - Apr. 2025 | Blacksburg, VA
-                    </p>
-                  </div>
-                  <div class="work-description">
-                    <p align="justify">
-                      As a <b>Software Developer (Part-time)</b> at
-                      <b>Virginia Tech's Center for Rural Education</b>, I
-                      worked under the guidance of Research Scientist Dr.
-                      Rachelle Kuehl and Director Dr. Amy Azano, leading the
-                      full-lifecycle development of Rural STARS - a survey
-                      analysis platform that scores gifted-education screening
-                      responses in real time and generates per-school PDF
-                      reports, replacing a fully manual evaluation process for
-                      rural school districts.
-                    </p>
-                    <div class="tech-stack">
-                      <span><i class="fab fa-python" title="Python"></i></span>
-                      <span class="custom-icon" title="NumPy">
-                        <svg
-                          viewBox="0 0 110 32"
-                          width="36"
-                          height="36"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="5"
-                            y="26"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="26"
-                            fill="#4D77CF"
-                            font-weight="bold"
-                          >
-                            NumPy
-                          </text>
-                        </svg>
-                      </span>
-                      <span class="custom-icon" title="Pandas">
-                        <svg
-                          viewBox="0 0 110 32"
-                          width="36"
-                          height="36"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="5"
-                            y="26"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="26"
-                            fill="#130754"
-                            font-weight="bold"
-                          >
-                            Pandas
-                          </text>
-                        </svg>
-                      </span>
-                      <span class="custom-icon" title="Streamlit">
-                        <svg
-                          viewBox="0 0 32 32"
-                          width="24"
-                          height="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle cx="16" cy="16" r="14" fill="#FF4B4B" />
-                          <text
-                            x="7"
-                            y="22"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="12"
-                            fill="#fff"
-                            font-weight="bold"
-                          >
-                            S
-                          </text>
-                        </svg>
-                      </span>
-                      <span><i class="fas fa-database" title="MySQL"></i></span>
-                      <span
-                        ><i class="fab fa-wordpress" title="WordPress"></i
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="work-logo">
-                    <a
-                      href="https://rural.vt.edu/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="./assets/vt.png"
-                        class="img-fluid"
-                        alt="Virginia Tech Logo"
-                        width="300"
-                        height="300"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Deloitte -->
-              <div class="swiper-slide">
-                <div class="work-content">
-                  <div class="work-header">
-                    <h2>Deloitte</h2>
-                    <h3>Analyst</h3>
-                    <p class="work-location">
-                      Jul. 2021 - Dec. 2022 | Hyderabad, India
-                    </p>
-                  </div>
-                  <div class="work-description">
-                    <p align="justify">
-                      As an <b>Analyst</b> on the
-                      <b>USI Digital Enablement Team</b>, I developed Apex code
-                      and Salesforce Flows on Deloitte's internal
-                      employee-lifecycle platform, automated recurring data
-                      uploads with UiPath RPA (eliminating a manual process run
-                      3-4 times daily), and engineered a Salesforce-to-ServiceNow
-                      integration during the firm's support-ticket migration,
-                      delivering ~2,000 cases, change requests, and process
-                      enhancements along the way.
-                    </p>
-                    <div class="tech-stack">
-                      <span
-                        ><i class="fab fa-salesforce" title="Salesforce"></i
-                      ></span>
-                      <span class="custom-icon" title="Apex">
-                        <svg
-                          viewBox="0 0 60 32"
-                          width="32"
-                          height="32"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="2"
-                            y="24"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="22"
-                            fill="#0099D4"
-                            font-weight="bold"
-                          >
-                            Apex
-                          </text>
-                        </svg>
-                      </span>
-                      <span><i class="fas fa-bolt" title="Lightning"></i></span>
-                      <span><i class="fab fa-html5" title="HTML5"></i></span>
-                      <span
-                        ><i class="fa-solid fa-cloud" title="Azure"></i
-                      ></span>
-                      <span class="custom-icon" title="UiPath">
-                        <svg
-                          viewBox="0 0 90 32"
-                          width="32"
-                          height="32"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <text
-                            x="2"
-                            y="24"
-                            font-family="Arial Black, Arial, sans-serif"
-                            font-size="22"
-                            fill="#FF6C00"
-                            font-weight="bold"
-                          >
-                            UiPath
-                          </text>
-                        </svg>
-                      </span>
-                      <span><i class="fas fa-database" title="MySQL"></i></span>
-                      <span><i class="fab fa-git-alt" title="Git"></i></span>
-                    </div>
-                    <button
-                      class="cta-btn cta-btn--hero"
-                      onclick="document.getElementById('achievements-modal').showModal()"
-                    >
-                      View Key Achievements
-                    </button>
-                  </div>
-                  <div class="work-logo">
-                    <a
-                      href="https://www.deloitte.com/global/en.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="./assets/Deloitte_Logo.png"
-                        class="img-fluid"
-                        alt="Deloitte Logo"
-                        width="300"
-                        height="300"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Workexp Section -->
-
-    <!-- Achievements Modal -->
-    <dialog id="achievements-modal" class="modal">
-      <div class="modal-content">
-        <h2>Key Achievements at Deloitte</h2>
-        <ul>
-          <li>
-            Worked on ~2000 Salesforce Cases/Requests including Change Requests,
-            process enhancements, Data Maintenance & ad-hoc issues
-          </li>
-          <li>Acted as one of the POC's for Talent Salesforce instance</li>
-          <li>
-            Led Salesforce to ServiceNow Migration project as key point of
-            contact
-          </li>
-          <li>
-            Authored comprehensive Standard Operating Procedure (SOP) documents
-          </li>
-          <li>
-            Organized team-building activities to foster positive work
-            environment
-          </li>
-        </ul>
-        <button
-          class="cta-btn cta-btn--hero"
-          onclick="document.getElementById('achievements-modal').close()"
-        >
-          Close
-        </button>
-      </div>
-    </dialog>
-
-    <br /><br />
-    <!-- Education Section -->
-    <section id="education">
-      <div class="container">
-        <br /><br />
-        <h2 class="section-title">Education</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <a
-              href="https://www.vt.edu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="img-fluid"
-                src="./assets/vt.png"
-                alt="Profile Image"
-                width="400"
-                height="220"
-              />
-            </a>
-          </div>
-          <div class="about-wrapper__info">
-            <h2>
-              Master's in Computer Science & Applications <br />Jan.
-              2023 - Dec. 2024 | Blacksburg, VA
-            </h2>
-            <br />
-            <p align="justify" class="about-wrapper__info-text">
-              During my pursuit of a Master's in Computer Science at
-              <b>Virginia Tech</b>, my primary focus was on Software
-              Engineering, Artificial Intelligence (AI), and Human-Computer
-              Interaction (HCI). This interdisciplinary approach provided me
-              with a comprehensive understanding of these fields, allowing me to
-              develop expertise in designing, optimizing, and building software
-              systems, working with cutting-edge AI technologies, and ensuring
-              user-friendly and intuitive interfaces. This educational journey
-              equipped me with a versatile skill set to contribute effectively
-              to various technology-driven endeavors.
-            </p>
-          </div>
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/JNTUH.png"
-              alt="Profile Image"
-              width="160"
-              height="160"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <h2>
-              Bachelor's in Computer Science & Engineering<br />Jul. 2017 - Jul.
-              2021 | Hyderabad, India
-            </h2>
-            <br />
-            <p align="justify" class="about-wrapper__info-text">
-              My undergraduate journey at
-              <b>Malla Reddy College of Engineering & Technology</b>
-              (affiliated with Jawaharlal Nehru Technological University,
-              Hyderabad) was a pivotal chapter in my academic and professional
-              development.
-              Pursuing a Bachelor's in Computer Science and Engineering, I
-              gained a strong foundation in core computer science concepts and
-              engineering principles. This comprehensive program not only
-              equipped me with essential technical skills but also nurtured my
-              problem-solving abilities and analytical thinking. Graduating with
-              distinction and holding three on-campus placement offers before
-              graduating, I left the institution with a solid academic
-              background that laid the groundwork for my continued pursuit of
-              excellence in the field of computer science.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Education Section -->
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">x3d-mcp</h3>
-              <p align="justify" class="project-wrapper__text-info">
-                x3d-mcp is an open-source Model Context Protocol (MCP) server
-                that lets large language models generate, validate, edit, and
-                animate ISO-standard X3D 3D scenes. It bridges LLMs' spatial
-                reasoning with a declarative, interoperable 3D format, with
-                multi-layer validation against the X3D specification. The
-                project was merged into the Web3D Consortium's official
-                x3d_mcp repository, contributing the semantic validation
-                layer, animation tooling (TimeSensor + Interpolator + ROUTE
-                chain generation), scene CRUD operations, X3DOM rendering, and
-                guided MCP prompts, developed in coordination with the AI with
-                X3D Working Group.
-                <br /><br />
-                <b>Technology:</b> Python, FastMCP (official MCP SDK), lxml
-                for XSD and Schematron validation, and the Web3D Consortium's
-                x3d.py package, with Docker-based testing.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Web3DConsortium/x3d_mcp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Official Repo</a
-                >
-                <a
-                  href="https://github.com/niknarra/x3d-mcp"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  >Reference Implementation</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a
-                href="https://github.com/Web3DConsortium/x3d_mcp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/x3dmcp.svg"
-                    class="img-fluid"
-                    alt="x3d-mcp project banner"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">X3Test</h3>
-              <p align="justify" class="project-wrapper__text-info">
-                X3Test is an open-source npm library for automated, headless
-                performance benchmarking of X3D/X3DOM web scenes. Built on
-                Node.js and Puppeteer, it measures FPS, render time, and scene
-                node counts through both a CLI and a JavaScript API, making it
-                easy to drop into CI/CD pipelines for regression testing of 3D
-                web content. X3Test won 3rd Place in the Tool/Pipeline
-                Innovation of the Year category at the Web3D '25 Tools
-                Competition and is published as a peer-reviewed paper at ACM
-                Web3D '25, the 30th International Conference on 3D Web
-                Technology.
-                <br /><br />
-                <b>Technology:</b> Node.js, Puppeteer for headless browser
-                automation, published on npm, designed for CI/CD integration.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/VT-Visionarium/X3Test"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-                <a
-                  href="https://dl.acm.org/doi/10.1145/3746237.3746315"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  >Paper</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a
-                href="https://github.com/VT-Visionarium/X3Test"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/x3test.svg"
-                    class="img-fluid"
-                    alt="X3Test project banner"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Rural STARS</h3>
-              <p align="justify" class="project-wrapper__text-info">
-                Rural STARS is a survey analysis platform built for Virginia
-                Tech's Center for Rural Education to identify gifted students
-                in rural school districts. QuestionPro webhooks feed survey
-                responses into the platform in real time, where Likert data is
-                normalized and candidates are flagged via per-scale thresholds
-                across five talent domains, with cross-scale aggregation to
-                surface multi-talented students. A validation and reporting
-                pipeline generates branded per-school PDF reports with
-                TLS-secured email delivery - replacing what was previously a
-                fully manual spreadsheet-and-calculator evaluation process for
-                county personnel.
-                <br /><br />
-                <b>Technology:</b> Python, Streamlit, Pandas, NumPy, ReportLab
-                for PDF generation, and SMTP with TLS for secure report
-                delivery.
-              </p>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a
-                href="https://rural.vt.edu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/ruralstars.svg"
-                    class="img-fluid"
-                    alt="Rural STARS project banner"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">TL;DW</h3>
-              <p align="justify" class="project-wrapper__text-info">
-                Too Long; Didn't Watch (TL;DW) is an innovative application
-                designed to address the challenges of information overload and
-                shortening attention spans in the digital era. TL;DW enables
-                users to interact with and quickly comprehend the essence of
-                lengthy video content. The technology behind TL;DW integrates
-                large language models (LLMs) and video encoders to create a
-                natural, conversational interface for video analysis. Key
-                features include on-demand video summarization, keyword-based
-                prompt recommendations, and navigation to specific video
-                segments guided by AI-generated responses.
-                <br /><br />
-                <b>Technology and Datasets:</b> The application is built using
-                Streamlit and incorporates Langchain components such as FAISS
-                ChatOpenAI and OpenAIEmbeddings. This setup facilitates an
-                effective method of extracting and concatenating video frame
-                captions and audio transcriptions, enhancing the AI's contextual
-                understanding and interaction accuracy​​.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://tldwapp2.streamlit.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://www.youtube.com/watch?v=AZgzeEoIaEM"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  >Demo Video</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a
-                href="https://tldwapp2.streamlit.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/tldw.svg"
-                    class="img-fluid"
-                    alt="TL;DW project banner"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <p align="center" class="project-wrapper__text-info">
-            <b>Fun Fact:</b> I used AI to generate the images you see for each
-            project!
-          </p>
-          <!-- /END Project -->
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Achievements</h2>
-
-          <!-- Tab Navigation -->
-          <div class="achievements-tabs">
-            <button class="tab-btn active" onclick="showTab('publications')">
-              Publications
-            </button>
-            <button class="tab-btn" onclick="showTab('awards')">
-              Awards & Honors
-            </button>
-          </div>
-
-          <!-- Publications Tab -->
-          <div id="publications-tab" class="tab-content active">
-            <div class="swiper publications-swiper">
-              <div class="swiper-wrapper">
-                <!-- Publication 1 -->
-                <div class="swiper-slide">
-                  <div class="work-content">
-                    <div class="work-header">
-                      <h2>A Generalized Web3D API for Metaverse Bookmarks</h2>
-                      <h3>
-                        Nikhil Narra, Anuj Marisetty, Nicholas Polys, and Ben
-                        Sandbrook.
-                      </h3>
-                      <p class="work-location">
-                        Web3D '25: Proceedings of the 30th International
-                        Conference on 3D Web Technology
-                      </p>
-                    </div>
-                    <div class="work-description">
-                      <p align="justify">
-                        This paper introduces a schema and API for a Web3D
-                        Bookmarking system that enables interoperable sharing of
-                        precise, user-generated 3D scene contexts.
-                      </p>
-                    </div>
-                    <div class="project-wrapper__text-btns">
-                      <a
-                        href="https://dl.acm.org/doi/10.1145/3746237.3746311"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="cta-btn cta-btn--hero cta-btn--projects"
-                        >Paper</a
-                      >
-                      <a
-                        href="https://doi.org/10.1145/3746237.3746311"
-                        target="_blank"
-                        class="cta-btn text-color-main"
-                        >DOI</a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Publication 2 -->
-                <div class="swiper-slide">
-                  <div class="work-content">
-                    <div class="work-header">
-                      <h2>
-                        X3Test: A Headless Browser-Based Framework for Automated
-                        Performance Benchmarking
-                      </h2>
-                      <h3>
-                        Nikhil Narra, Anuj Marisetty, Nicholas Polys, and Ben
-                        Sandbrook.
-                      </h3>
-                      <p class="work-location">
-                        Web3D '25: Proceedings of the 30th International
-                        Conference on 3D Web Technology
-                      </p>
-                    </div>
-                    <div class="work-description">
-                      <p align="justify">
-                        An automated testing and performance benchmarking
-                        framework designed to address the absence of dedicated
-                        tools for X3D scenes on the web.
-                      </p>
-                    </div>
-                    <div class="project-wrapper__text-btns">
-                      <a
-                        href="https://dl.acm.org/doi/10.1145/3746237.3746315"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="cta-btn cta-btn--hero cta-btn--projects"
-                        >Paper</a
-                      >
-                      <a
-                        href="https://doi.org/10.1145/3746237.3746315"
-                        target="_blank"
-                        class="cta-btn text-color-main"
-                        >DOI</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Navigation -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-
-          <!-- Awards & Honors Tab -->
-          <div id="awards-tab" class="tab-content">
-            <div class="awards-grid">
-              <div class="award-item">
-                <div class="award-header">
-                  <h3>Spot Award</h3>
-                  <p class="award-date">2022</p>
-                </div>
-                <div class="award-description">
-                  <p>
-                    Received a spot award as part of the FY'23 Deloitte Rewards
-                    and Recognition (R&R) Program for rapid learning,
-                    independent leadership, and technical expertise in managing
-                    critical tasks.
-                  </p>
-                </div>
-              </div>
-
-              <div class="award-item">
-                <div class="award-header">
-                  <h3>Web3D/Metaverse Tool/Pipeline Innovation of the Year</h3>
-                  <p class="award-date">2025</p>
-                </div>
-                <div class="award-description">
-                  <p>
-                    3rd Place Winner at the Web3D/Metaverse Tools Competition
-                    held as part of Web 3D 2025: The 30th International ACM
-                    Conference on Web3D Technology in Siena, Italy.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br /><br />
-    </section>
-    <!-- End Achievements Section -->
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-            Feel free to connect with me on LinkedIn or drop an email using the
-            links below. <br /><br />
-            I'm looking forward to connecting with you!
-          </p>
-          <!--<a href="#" class="cta-btn cta-btn--resume">Download Resume</a>-->
-        </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <!--
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        -->
-          <a
-            href="mailto:nikhil20500@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="email"
-          >
-            <i class="fa fa-envelope"></i>
-          </a>
-          <!--
-          <a
-            href="mailto:nikhilnarra@vt.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-home-alt"></i>
-          </a>
-        -->
-          <a
-            href="https://www.linkedin.com/in/nikhilnarra/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa fa-github"></i>
-          </a>
-          <a
-            href="https://orcid.org/0009-0008-9489-8101"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="orcid"
-          >
-            <i class="fab fa-orcid"></i>
-          </a>
-          <a
-            href="https://www.npmjs.com/~niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="npm"
-          >
-            <i class="fab fa-npm"></i>
-          </a>
-        </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Designed by
-          <a
-            href="https://github.com/niknarra"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Nikhil Narra</a
-          >. <br />Made with &hearts;
-          <br />
-          Last Updated on: July 21, 2026
-        </p>
-      </div>
-      <br />
-      <img
-        src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fniknarra%2Fniknarra.github.io&labelColor=%232ccce4&countColor=%23c13560"
-        alt="visitor badge"
-      />
-    </footer>
-    <!-- END Footer Section -->
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-    <script type="text/javascript" src="./javascript/buttons.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      const workSwiper = new Swiper(".work-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      const publicationsSwiper = new Swiper(".publications-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: ".publications-swiper .swiper-button-next",
-          prevEl: ".publications-swiper .swiper-button-prev",
-        },
-      });
-
-      // Tab switching functionality for Achievements section
-      function showTab(tabName) {
-        // Hide all tab contents
-        const tabContents = document.querySelectorAll(".tab-content");
-        tabContents.forEach((content) => {
-          content.classList.remove("active");
-        });
-
-        // Remove active class from all buttons
-        const tabBtns = document.querySelectorAll(".tab-btn");
-        tabBtns.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-
-        // Show selected tab content
-        document.getElementById(tabName + "-tab").classList.add("active");
-
-        // Add active class to clicked button
-        event.target.classList.add("active");
+    <meta property="og:url" content="https://niknarra.github.io/" />
+    <meta property="og:title" content="Nikhil Narra | Full-Stack Software Engineer" />
+    <meta property="og:description" content="User-focused products spanning responsive interfaces, scalable backend systems, cloud infrastructure, and developer tools." />
+    <meta property="og:image" content="https://niknarra.github.io/assets/social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nikhil Narra | Full-Stack Software Engineer" />
+    <meta name="twitter:description" content="User-focused products spanning responsive interfaces, scalable backend systems, cloud infrastructure, and developer tools." />
+    <meta name="twitter:image" content="https://niknarra.github.io/assets/social-card.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nikhil Narra",
+        "url": "https://niknarra.github.io/",
+        "image": "https://niknarra.github.io/assets/profile.png",
+        "jobTitle": "Software Developer",
+        "worksFor": { "@type": "Organization", "name": "Blackhawk Network" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Virginia Tech" },
+        "sameAs": [
+          "https://github.com/niknarra",
+          "https://www.linkedin.com/in/nikhilnarra/",
+          "https://orcid.org/0009-0008-9489-8101",
+          "https://www.npmjs.com/~niknarra"
+        ]
       }
     </script>
+  </head>
+  <body class="portfolio-page">
+    <div class="scroll-progress" aria-hidden="true"><i data-progress></i></div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="portfolio-header" data-header>
+      <a class="portfolio-brand" href="#top" aria-label="Nikhil Narra, home">
+        <img src="./assets/NN_Updated_logo.png" alt="" width="42" height="42" />
+        <span>Nikhil Narra</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span><span aria-hidden="true">Menu</span>
+      </button>
+      <nav class="portfolio-nav" id="site-navigation" aria-label="Primary" data-nav>
+        <a href="#experience"><span>01</span> Log</a>
+        <a href="#projects"><span>03</span> Work</a>
+        <a href="#recognition"><span>04</span> Proof</a>
+        <a href="blog.html"><span>06</span> Notes</a>
+      </nav>
+      <a class="header-contact" href="mailto:nikhil20500@gmail.com"><span class="status-dot" aria-hidden="true"></span>Say hello</a>
+    </header>
+
+    <main id="main-content">
+      <section class="field-hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-gridlines" aria-hidden="true"></div>
+        <div class="hero-side-note" aria-hidden="true"><span>33.0198° N</span><span>96.6989° W</span></div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="hero-label" data-hero-label><span>Full-stack software engineer</span><span>Texas / USA</span></p>
+            <h1 id="hero-title">
+              <span class="hero-line" data-hero-line>First, make</span>
+              <span class="hero-line" data-hero-line>it work.</span>
+              <span class="hero-line hero-line-hot" data-hero-line>Then make</span>
+              <span class="hero-line hero-line-last" data-hero-line>it survive.</span>
+            </h1>
+            <p class="hero-intro" data-hero-intro>I&rsquo;m Nikhil&mdash;impatient for the first working version, stubborn about the edge cases, and happiest when I can own the whole path to production.</p>
+            <div class="hero-actions" data-hero-intro>
+              <a class="ink-link ink-link-dark" href="#projects" data-magnetic>See what shipped <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="./assets/Nikhil's Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="portrait-board" data-hero-portrait data-parallax="-28">
+            <span class="portrait-tape portrait-tape-one" aria-hidden="true"></span>
+            <span class="portrait-tape portrait-tape-two" aria-hidden="true"></span>
+            <div class="portrait-frame"><img src="./assets/profile.png" alt="Nikhil Narra" width="476" height="640" /></div>
+            <figcaption><span>Currently shipping</span><strong>Software Developer @ Blackhawk Network</strong></figcaption>
+            <div class="portrait-stamp" aria-hidden="true">NN<br />/26</div>
+          </figure>
+        </div>
+        <div class="hero-bottom" data-hero-intro>
+          <div class="hero-profiles" aria-label="Professional profiles">
+            <a href="https://github.com/niknarra" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/nikhilnarra/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://orcid.org/0009-0008-9489-8101" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+          </div>
+          <p class="scroll-note"><span aria-hidden="true">↓</span> Scroll the field notes</p>
+        </div>
+      </section>
+
+      <section class="outcome-ticker" aria-label="Selected outcomes">
+        <div class="ticker-track">
+          <div class="ticker-set">
+            <p><strong>100K+</strong> nightly fetches removed</p><p><strong>15+</strong> services tracing together</p>
+            <p><strong>Solo</strong> owner, idea through production</p><p><strong>3</strong> peer-reviewed ACM papers</p>
+          </div>
+          <div class="ticker-set" aria-hidden="true">
+            <p><strong>100K+</strong> nightly fetches removed</p><p><strong>15+</strong> services tracing together</p>
+            <p><strong>Solo</strong> owner, idea through production</p><p><strong>3</strong> peer-reviewed ACM papers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="seams-section" id="about" aria-labelledby="seams-title">
+        <div class="section-tag section-tag-light" data-reveal><span>00</span> Operating mode</div>
+        <div class="seams-copy">
+          <p class="builder-order" data-reveal>Builder <span>&rarr;</span> Product thinker <span>&rarr;</span> Researcher</p>
+          <h2 id="seams-title" data-reveal>Start with the <em>useful</em> thing. Find the worst case. Own what happens next.</h2>
+          <p data-reveal>I like ambiguous problems, lean teams, and enough room to follow a decision across the interface, service, infrastructure, and production graph.</p>
+        </div>
+        <div class="orbit" aria-label="Core engineering capabilities" data-reveal>
+          <span class="orbit-core">Worst<br />case?</span><span class="orbit-word orbit-word-one">Build</span><span class="orbit-word orbit-word-two">Break</span>
+          <span class="orbit-word orbit-word-three">Learn</span><span class="orbit-word orbit-word-four">Ship</span>
+        </div>
+        <div class="stack-ribbon" aria-label="Technology stack">
+          <span>Java</span><span>Spring Boot</span><span>React</span><span>Angular</span><span>AWS</span><span>Docker</span>
+          <span>Python</span><span>Node.js</span><span>PostgreSQL</span><span>Jenkins</span><span>LangChain</span><span>MCP</span>
+        </div>
+      </section>
+
+      <section class="build-log" id="experience" aria-labelledby="experience-title">
+        <div class="log-heading">
+          <div class="section-tag" data-reveal><span>01</span> Production log</div>
+          <h2 id="experience-title" data-reveal>What I owned, not just where I worked.</h2>
+          <p data-reveal>Production systems, product decisions, and research infrastructure&mdash;with the responsibility left in.</p>
+        </div>
+        <div class="log-entries">
+          <article class="log-entry" data-log-entry>
+            <div class="log-index">001</div><div class="log-meta"><time datetime="2025-04">Apr. 2025 → now</time><p>Coppell, Texas</p></div>
+            <div class="log-role"><p>Blackhawk Network</p><h3>Software Developer</h3></div>
+            <ul><li>Turned a 3–4 hour nightly cron into a real-time SQS and EventBridge pipeline, removing 100K+ nightly fetches.</li><li>Built correlation-ID tracing now used across 15+ microservices and five backend platforms.</li><li>Moved legacy EC2 deployments to ECS, ALBs, blue/green releases, and repeatable Jenkins delivery.</li></ul>
+            <p class="log-stack">Java / Spring Boot / AWS / Docker / CloudFormation</p>
+          </article>
+          <article class="log-entry" data-log-entry>
+            <div class="log-index">002</div><div class="log-meta"><time datetime="2023-12">Dec. 2023 → Apr. 2025</time><p>Blacksburg, Virginia</p></div>
+            <div class="log-role"><p>Virginia Tech · ARC</p><h3>Software Developer Intern</h3></div>
+            <ul><li>Built RAG search across 10K+ pages and 20+ university departments.</li><li>Rebuilt legacy X3D coursework in React, growing use from three to 40+ students.</li><li>Added Meta Quest 3 controller support to X3DOM&rsquo;s open-source runtime.</li></ul>
+            <p class="log-stack">React / Node.js / LangChain / WebXR / X3D</p>
+          </article>
+          <article class="log-entry" data-log-entry>
+            <div class="log-index">003</div><div class="log-meta"><time datetime="2021-07">Jul. 2021 → Dec. 2022</time><p>Hyderabad, India</p></div>
+            <div class="log-role"><p>Deloitte</p><h3>Analyst</h3></div>
+            <ul><li>Automated the employee lifecycle with Apex and Salesforce Flow.</li><li>Removed a manual Data Loader process with UiPath automation.</li><li>Connected Salesforce cases to ServiceNow with reliable field-level mapping.</li></ul>
+            <p class="log-stack">Apex / Salesforce / UiPath / ServiceNow</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pressure-stories" aria-labelledby="pressure-title">
+        <div class="pressure-heading">
+          <div class="section-tag section-tag-light" data-reveal><span>02</span> Pressure tests</div>
+          <h2 id="pressure-title" data-reveal>Two stories explain how I work better than a skills list.</h2>
+          <p data-reveal>I build quickly. Production usually tells me what deserves to become permanent.</p>
+        </div>
+        <div class="pressure-grid">
+          <article class="pressure-story pressure-story-primary" data-reveal>
+            <div class="pressure-number">01</div>
+            <p class="pressure-eyebrow">The nightly job that should not have been nightly</p>
+            <h3>Three hours became real time.</h3>
+            <p>A product-catalog cron fetched more than 100K records every night and took three to four hours to finish. I redesigned it as an event-driven SQS and EventBridge pipeline, built the infrastructure and application code, and published webhooks to subscribers as updates happened.</p>
+            <blockquote>&ldquo;Not my ticket&rdquo; is not a useful system boundary.</blockquote>
+            <div class="pressure-flow" aria-label="System changed from overnight batch work to real-time updates">
+              <span>Nightly batch</span><i aria-hidden="true">&rarr;</i><span>Events</span><i aria-hidden="true">&rarr;</i><span>Subscribers</span>
+            </div>
+          </article>
+          <article class="pressure-story pressure-story-secondary" data-reveal>
+            <div class="pressure-number">02</div>
+            <p class="pressure-eyebrow">My first on-call incident</p>
+            <h3>The logs did not know each other.</h3>
+            <p>A run of 504s led to a degraded microservice, but there was no correlation across the transaction. I traced it manually once, then built the correlation-ID library I wished I had&mdash;and rolled it across 15+ microservices and five backend platforms.</p>
+            <blockquote>One ID. The whole transaction. Much less detective work.</blockquote>
+            <div class="trace-strip" aria-label="One correlation ID connecting multiple services">
+              <strong>7F3A</strong><span>API</span><span>ORDER</span><span>CATALOG</span><span>WEBHOOK</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-lab" id="projects" aria-labelledby="projects-title">
+        <div class="project-lab-heading">
+          <div class="section-tag section-tag-light" data-reveal><span>03</span> Selected systems</div>
+          <h2 id="projects-title" data-reveal>Three builds.<br />Three different kinds of useful.</h2>
+        </div>
+        <div class="project-specimens">
+          <article class="project-specimen project-mcp" data-project>
+            <div class="project-ledger"><span>Specimen 01</span><span>Open source / AI tooling</span></div>
+            <div class="project-copy">
+              <p class="project-result">28 tools · four validation layers · official Web3D project</p><h3>x3d-mcp</h3>
+              <p>An MCP server that gives language models structured tools to generate, edit, validate, render, and animate standards-compliant X3D scenes.</p>
+              <div class="project-links"><a href="https://github.com/Web3DConsortium/x3d_mcp" target="_blank" rel="noopener noreferrer">Official repository ↗</a><a href="https://dl.acm.org/doi/10.1145/3822516.3834882" target="_blank" rel="noopener noreferrer">ACM paper ↗</a></div>
+            </div>
+            <div class="mcp-machine project-machine" aria-label="Illustration of the x3d-mcp validation flow">
+              <div class="machine-window"><div class="machine-top"><i></i><i></i><i></i><span>x3d_mcp / scene.build</span></div>
+                <div class="machine-body"><div class="wire-cube" aria-hidden="true"><i></i><b></b></div><ol><li><span>01</span> Parse request</li><li><span>02</span> Author scene</li><li><span>03</span> Validate × 4</li><li><span>04</span> Render X3D</li></ol></div>
+                <div class="machine-status"><span>VALID</span><strong>28 / tools ready</strong></div></div>
+            </div>
+          </article>
+          <article class="project-specimen project-x3test" data-project>
+            <div class="project-ledger"><span>Specimen 02</span><span>Performance engineering</span></div>
+            <div class="project-copy">
+              <p class="project-result">3rd place · Web3D/Metaverse Tools Competition</p><h3>X3Test</h3>
+              <p>A headless framework that turns X3D and X3DOM performance into repeatable numbers—FPS, render time, scene nodes, and regressions in local workflows or CI.</p>
+              <div class="project-links"><a href="https://github.com/VT-Visionarium/X3Test" target="_blank" rel="noopener noreferrer">Source code ↗</a><a href="https://doi.org/10.1145/3746237.3746315" target="_blank" rel="noopener noreferrer">ACM paper ↗</a></div>
+            </div>
+            <div class="benchmark-machine project-machine" aria-label="X3Test benchmark readout">
+              <div class="benchmark-title"><span>run_042</span><strong>PASS</strong></div><div class="benchmark-number"><strong>59.7</strong><span>frames / second</span></div>
+              <div class="benchmark-chart" aria-hidden="true"><i style="--bar: 32%"></i><i style="--bar: 48%"></i><i style="--bar: 44%"></i><i style="--bar: 67%"></i><i style="--bar: 58%"></i><i style="--bar: 84%"></i><i style="--bar: 74%"></i><i style="--bar: 94%"></i><i style="--bar: 88%"></i></div>
+              <div class="benchmark-foot"><span>16.8ms render</span><span>1,284 nodes</span><span>Δ 1.2%</span></div>
+            </div>
+          </article>
+          <article class="project-specimen project-stars" data-project>
+            <div class="project-ledger"><span>Specimen 03</span><span>Education / data platform</span></div>
+            <div class="project-copy">
+              <p class="project-result">Survey webhook → scoring → school-ready report</p><h3>Rural STARS</h3>
+              <p>The project closest to me: a real-time screening and reporting platform that helps rural teachers identify gifted students who are too often overlooked by the software industry.</p>
+              <div class="project-links"><a href="https://rural.vt.edu/" target="_blank" rel="noopener noreferrer">Virginia Tech project ↗</a></div>
+            </div>
+            <div class="stars-machine project-machine" aria-label="Rural STARS data pipeline">
+              <div class="stars-orbit" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><strong>5</strong><span>talent<br />domains</span></div>
+              <ol><li><span>01</span> Ingest</li><li><span>02</span> Normalize</li><li><span>03</span> Report</li></ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof-wall" id="recognition" aria-labelledby="recognition-title">
+        <div class="proof-heading">
+          <div class="section-tag" data-reveal><span>04</span> Receipts</div><h2 id="recognition-title" data-reveal>Proof that left the repository.</h2>
+          <p data-reveal>Peer review, open-source recognition, and a couple of certificates worth keeping.</p>
+        </div>
+        <div class="award-wall">
+          <article class="award-poster award-poster-blue" data-award>
+            <div class="award-pin" aria-hidden="true"></div><p><span>2026</span> Scientific Excellence</p>
+            <a href="./assets/awards/web3d-2026-scientific-excellence-award.png" target="_blank" rel="noopener"><img src="./assets/awards/web3d-2026-scientific-excellence-award.png" alt="Web3D 2026 Scientific Excellence Award certificate" width="1856" height="1052" loading="lazy" /></a>
+            <h3>x3d-mcp</h3><p>ACM Web3D recognition for its contribution to AI-assisted X3D authoring.</p>
+            <a class="award-action" href="https://dl.acm.org/doi/10.1145/3822516.3834882" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
+          </article>
+          <article class="award-poster award-poster-yellow" data-award>
+            <div class="award-pin" aria-hidden="true"></div><p><span>2025</span> 3rd Place Winner</p>
+            <a href="./assets/awards/web3d-2025-x3test-third-place.jpg" target="_blank" rel="noopener"><img src="./assets/awards/web3d-2025-x3test-third-place.jpg" alt="Web3D 2025 certificate naming X3Test the third-place winner" width="1920" height="1445" loading="lazy" /></a>
+            <h3>X3Test</h3><p>Web3D/Metaverse Tools Competition recognition for automated performance benchmarking.</p>
+            <a class="award-action" href="https://doi.org/10.1145/3746237.3746315" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
+          </article>
+        </div>
+        <div class="paper-ledger" data-reveal>
+          <div class="ledger-row ledger-head"><span>Published</span><span>Paper</span><span>Open</span></div>
+          <div class="ledger-row"><span>Web3D &rsquo;26</span><strong>x3d-mcp: A Model Context Protocol Server for AI-Assisted X3D Authoring</strong><a href="https://dl.acm.org/doi/10.1145/3822516.3834882" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="ledger-row"><span>Web3D &rsquo;25</span><strong>X3Test: Automated Performance Benchmarking of X3D/X3DOM Scenes</strong><a href="https://doi.org/10.1145/3746237.3746315" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="ledger-row"><span>Web3D &rsquo;25</span><strong>A Generalized Web3D API for Metaverse Bookmarks</strong><a href="https://doi.org/10.1145/3746237.3746311" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+          <div class="ledger-row"><span>Deloitte · 2022</span><strong>Spot Award for technical ownership and high-impact delivery</strong><a href="./assets/awards/deloitte-spot-award.png" target="_blank" rel="noopener">Certificate ↗</a></div>
+        </div>
+      </section>
+
+      <section class="education-strip" aria-labelledby="education-title">
+        <div class="education-title" data-reveal><div class="section-tag section-tag-light"><span>05</span> Formation</div><h2 id="education-title">Two degrees.<br />Still learning.</h2></div>
+        <div class="education-records">
+          <article data-reveal><span>2023—2024</span><h3>Virginia Tech</h3><p>MS, Computer Science · GPA 3.97 / 4.00</p><small>Blacksburg, Virginia</small></article>
+          <article data-reveal><span>2017—2021</span><h3>JNTU Hyderabad</h3><p>BTech, Computer Science &amp; Engineering</p><small>Hyderabad, India</small></article>
+        </div>
+      </section>
+
+      <section class="note-section" id="writing" aria-labelledby="writing-title">
+        <p class="note-kicker" data-reveal>Note 001 / learning in public</p>
+        <a class="note-link" href="blog/dsa-journey.html" data-reveal><span class="note-arrow" aria-hidden="true">↗</span><h2 id="writing-title">My love-hate, ever-evolving journey with data structures and algorithms</h2><p>Why mastery is an ongoing process of exploration rather than a finish line.</p><strong>Read the note · 7 min</strong></a>
+      </section>
+
+      <section class="personal-reel" aria-labelledby="personal-title">
+        <div class="reel-track" aria-hidden="true"><span>WRITE</span><i></i><span>FILM</span><i></i><span>BUILD</span><i></i><span>REPEAT</span></div>
+        <div class="personal-copy">
+          <p class="note-kicker" data-reveal>Off the clock / still making things</p>
+          <h2 id="personal-title" data-reveal>Software is not my only blank page.</h2>
+          <p data-reveal>I write screenplays and scripts, make short films, follow F1, MMA and wrestling, care too much about cars, and listen to music without respecting genre boundaries.</p>
+        </div>
+        <div class="personal-tags" data-reveal aria-label="Personal interests">
+          <span>Screenplays</span><span>Short films</span><span>F1</span><span>Cars</span><span>MMA</span><span>Wrestling</span><span>Music everywhere</span>
+        </div>
+      </section>
+
+      <section class="contact-poster" id="contact" aria-labelledby="contact-title">
+        <div class="contact-meta"><span>Exploring software engineering roles</span><span data-chicago-time>Chicago · --:--</span></div>
+        <h2 id="contact-title" data-reveal>Put me on a lean team with something worth owning.</h2>
+        <p class="contact-intro" data-reveal>High autonomy. High ownership. From the first useful version through the production graph.</p>
+        <a class="contact-email" href="mailto:nikhilnarra@vt.edu" data-magnetic><span>nikhilnarra@vt.edu</span><i aria-hidden="true">↗</i></a>
+        <div class="contact-links"><a href="https://github.com/niknarra" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/nikhilnarra/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.npmjs.com/~niknarra" target="_blank" rel="noopener noreferrer">npm ↗</a></div>
+      </section>
+    </main>
+
+    <footer class="portfolio-footer">
+      <img src="./assets/NN_Updated_logo.png" alt="" width="40" height="40" /><p>Built with urgency. Reworked with care.</p>
+      <p>&copy; <span data-year></span> Nikhil Narra</p><a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js" defer></script>
+    <script src="./javascript/main.js?v=20261029-2" defer></script>
   </body>
 </html>

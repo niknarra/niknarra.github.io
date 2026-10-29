@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Nikhil Narra - Backend and Platform Software Engineer</title>
+  <desc id="description">Social preview card with Nikhil Narra's name and engineering focus.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#54d6d1"/>
+      <stop offset="1" stop-color="#6d8df7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="20%" r="55%">
+      <stop offset="0" stop-color="#54d6d1" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#07111f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#07111f"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="80" y="76" width="64" height="64" rx="15" fill="url(#accent)"/>
+  <text x="112" y="118" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="20" font-weight="700" fill="#07111f">NN</text>
+  <text x="80" y="270" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="750" letter-spacing="-3" fill="#ffffff">Nikhil Narra</text>
+  <text x="80" y="350" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="650" fill="url(#accent)">Backend &amp; Platform Software Engineer</text>
+  <text x="80" y="420" font-family="Inter, Arial, sans-serif" font-size="25" fill="#b8c4d3">Event-driven systems · Cloud infrastructure · Developer tools</text>
+  <line x1="80" y1="500" x2="1120" y2="500" stroke="#ffffff" stroke-opacity=".15"/>
+  <text x="80" y="550" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#54d6d1">niknarra.github.io</text>
+</svg>

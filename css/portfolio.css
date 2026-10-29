@@ -488,7 +488,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin-top: 2rem; }.contact-links a { font: 800 0.68rem var(--mono); text-transform: uppercase; }
 
 .portfolio-footer { display: grid; grid-template-columns: auto 1fr auto auto; gap: 2rem; align-items: center; padding: 1.5rem var(--pad); background: var(--paper); border-top: 1px solid var(--ink); }
-.portfolio-footer img { width: 2rem; height: 2rem; }.portfolio-footer p, .portfolio-footer a { margin: 0; font: 0.62rem var(--mono); text-transform: uppercase; }.portfolio-footer a { font-weight: 800; }
+.portfolio-footer .footer-logo { width: 2rem; height: 2rem; }.portfolio-footer .footer-visitors { display: inline-flex; align-items: center; }.portfolio-footer .footer-visitors img { display: block; width: auto; height: 1.25rem; }.portfolio-footer time, .portfolio-footer a { margin: 0; font: 0.62rem var(--mono); text-transform: uppercase; }.portfolio-footer a { font-weight: 800; }
 
 .motion-ready [data-hero-line],
 .motion-ready [data-hero-label],
@@ -601,7 +601,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .contact-poster h2 { margin-block: 3rem; font-size: clamp(4rem, 18vw, 6.2rem); }
   .contact-intro { margin: -1rem 0 3rem; }
   .contact-email { align-items: end; font-size: clamp(1.25rem, 6.3vw, 2rem); }
-  .portfolio-footer { grid-template-columns: auto 1fr; gap: 1rem; }.portfolio-footer p:nth-of-type(2), .portfolio-footer a { justify-self: end; }.portfolio-footer > p:first-of-type { display: none; }
+  .portfolio-footer { grid-template-columns: auto 1fr; gap: 1rem; }.portfolio-footer .footer-updated { grid-column: 1; grid-row: 2; }.portfolio-footer > a { grid-column: 2; grid-row: 2; justify-self: end; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,14 +1,24 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
-const yearNodes = document.querySelectorAll("[data-year]");
+const updatedNodes = document.querySelectorAll("[data-last-updated]");
 const timeNodes = document.querySelectorAll("[data-chicago-time]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const isPortfolio = document.body.classList.contains("portfolio-page");
 
-yearNodes.forEach((node) => {
-  node.textContent = new Date().getFullYear();
-});
+const lastModified = new Date(document.lastModified);
+if (!Number.isNaN(lastModified.getTime())) {
+  const updatedLabel = new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(lastModified);
+
+  updatedNodes.forEach((node) => {
+    node.dateTime = lastModified.toISOString().slice(0, 10);
+    node.textContent = `Last updated ${updatedLabel}`;
+  });
+}
 
 function updateChicagoTime() {
   if (!timeNodes.length) return;

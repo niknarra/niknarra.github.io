@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://niknarra.github.io/" />
     <link rel="icon" type="image/png" href="./assets/nnlogo.png" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css" />
-    <link rel="stylesheet" href="./css/portfolio.css?v=20261029-12" />
+    <link rel="stylesheet" href="./css/portfolio.css?v=20261030-3" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://niknarra.github.io/" />
     <meta property="og:title" content="Nikhil Narra | Full-Stack Software Engineer" />
@@ -39,7 +39,6 @@
     </script>
   </head>
   <body class="portfolio-page">
-    <div class="scroll-progress" aria-hidden="true"><i data-progress></i></div>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="portfolio-header" data-header>
@@ -51,21 +50,19 @@
         <span class="sr-only">Toggle navigation</span><span aria-hidden="true">Menu</span>
       </button>
       <nav class="portfolio-nav" id="site-navigation" aria-label="Primary" data-nav>
-        <a href="#experience"><span>01</span> Log</a>
-        <a href="#projects"><span>03</span> Work</a>
-        <a href="#recognition"><span>04</span> Proof</a>
-        <a href="blog.html"><span>06</span> Notes</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#recognition">Recognition</a>
+        <a href="blog.html">Writing</a>
       </nav>
       <a class="header-contact" href="mailto:nikhil20500@gmail.com"><span class="status-dot" aria-hidden="true"></span>Say hello</a>
     </header>
 
     <main id="main-content">
       <section class="field-hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-gridlines" aria-hidden="true"></div>
-        <div class="hero-side-note" aria-hidden="true"><span>33.0198° N</span><span>96.6989° W</span></div>
         <div class="hero-layout">
           <div class="hero-copy">
-            <p class="hero-label" data-hero-label><span>Full-stack software engineer</span><span>Texas / USA</span></p>
+            <p class="hero-label" data-hero-label><span>Full-stack software engineer</span><span class="hero-location"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>USA</span></p>
             <h1 id="hero-title">
               <span class="hero-line" data-hero-line>First, make</span>
               <span class="hero-line" data-hero-line>it work.</span>
@@ -74,16 +71,13 @@
             </h1>
             <p class="hero-intro" data-hero-intro>I&rsquo;m Nikhil&mdash;impatient for the first working version, stubborn about the edge cases, and happiest when I can own the whole path to production.</p>
             <div class="hero-actions" data-hero-intro>
-              <a class="ink-link ink-link-dark" href="#projects" data-magnetic>See what shipped <span aria-hidden="true">↘</span></a>
+              <a class="ink-link ink-link-dark" href="#projects">See what shipped <span aria-hidden="true">↘</span></a>
               <a class="text-link" href="./assets/Nikhil's Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <figure class="portrait-board" data-hero-portrait data-parallax="-28">
-            <span class="portrait-tape portrait-tape-one" aria-hidden="true"></span>
-            <span class="portrait-tape portrait-tape-two" aria-hidden="true"></span>
+          <figure class="portrait-board" data-hero-portrait>
             <div class="portrait-frame"><img src="./assets/profile.png" alt="Nikhil Narra" width="476" height="640" /></div>
             <figcaption><span>Currently shipping</span><strong>Software Developer @ Blackhawk Network</strong></figcaption>
-            <div class="portrait-stamp" aria-hidden="true">NN<br />/26</div>
           </figure>
         </div>
         <div class="hero-bottom" data-hero-intro>
@@ -102,23 +96,15 @@
             <p><strong>100K+</strong> nightly fetches removed</p><p><strong>15+</strong> services tracing together</p>
             <p><strong>Solo</strong> owner, idea through production</p><p><strong>3</strong> peer-reviewed ACM papers</p>
           </div>
-          <div class="ticker-set" aria-hidden="true">
-            <p><strong>100K+</strong> nightly fetches removed</p><p><strong>15+</strong> services tracing together</p>
-            <p><strong>Solo</strong> owner, idea through production</p><p><strong>3</strong> peer-reviewed ACM papers</p>
-          </div>
         </div>
       </section>
 
       <section class="seams-section" id="about" aria-labelledby="seams-title">
-        <div class="section-tag section-tag-light" data-reveal><span>00</span> Operating mode</div>
+        <div class="section-tag section-tag-light" data-reveal>How I work</div>
         <div class="seams-copy">
           <p class="builder-order" data-reveal>Builder <span>&rarr;</span> Product thinker <span>&rarr;</span> Researcher</p>
           <h2 id="seams-title" data-reveal>Start with the <em>useful</em> thing. Find the worst case. Own what happens next.</h2>
           <p data-reveal>I like ambiguous problems, lean teams, and enough room to follow a decision across the interface, service, infrastructure, and production graph.</p>
-        </div>
-        <div class="orbit" aria-label="Core engineering capabilities" data-reveal>
-          <span class="orbit-core">Worst<br />case?</span><span class="orbit-word orbit-word-one">Build</span><span class="orbit-word orbit-word-two">Break</span>
-          <span class="orbit-word orbit-word-three">Learn</span><span class="orbit-word orbit-word-four">Ship</span>
         </div>
         <div class="stack-ribbon" aria-label="Technology stack">
           <span>Java</span><span>Spring Boot</span><span>React</span><span>Angular</span><span>AWS</span><span>Docker</span>
@@ -128,25 +114,25 @@
 
       <section class="build-log" id="experience" aria-labelledby="experience-title">
         <div class="log-heading">
-          <div class="section-tag" data-reveal><span>01</span> Production log</div>
+          <div class="section-tag" data-reveal>Experience</div>
           <h2 id="experience-title" data-reveal>What I owned, not just where I worked.</h2>
           <p data-reveal>Production systems, product decisions, and research infrastructure&mdash;with the responsibility left in.</p>
         </div>
         <div class="log-entries">
           <article class="log-entry" data-log-entry>
-            <div class="log-index">001</div><div class="log-meta"><time datetime="2025-04">Apr. 2025 → now</time><p>Coppell, Texas</p></div>
+            <div class="log-meta"><time datetime="2025-04">Apr. 2025 → now</time><p>Coppell, Texas</p></div>
             <div class="log-role"><p>Blackhawk Network</p><h3>Software Developer</h3></div>
             <ul><li>Turned a 3–4 hour nightly cron into a real-time SQS and EventBridge pipeline, removing 100K+ nightly fetches.</li><li>Built correlation-ID tracing now used across 15+ microservices and five backend platforms.</li><li>Moved legacy EC2 deployments to ECS, ALBs, blue/green releases, and repeatable Jenkins delivery.</li></ul>
             <p class="log-stack">Java / Spring Boot / AWS / Docker / CloudFormation</p>
           </article>
           <article class="log-entry" data-log-entry>
-            <div class="log-index">002</div><div class="log-meta"><time datetime="2023-12">Dec. 2023 → Apr. 2025</time><p>Blacksburg, Virginia</p></div>
+            <div class="log-meta"><time datetime="2023-12">Dec. 2023 → Apr. 2025</time><p>Blacksburg, Virginia</p></div>
             <div class="log-role"><p>Virginia Tech · ARC</p><h3>Software Developer Intern</h3></div>
             <ul><li>Built RAG search across 10K+ pages and 20+ university departments.</li><li>Rebuilt legacy X3D coursework in React, growing use from three to 40+ students.</li><li>Added Meta Quest 3 controller support to X3DOM&rsquo;s open-source runtime.</li></ul>
             <p class="log-stack">React / Node.js / LangChain / WebXR / X3D</p>
           </article>
           <article class="log-entry" data-log-entry>
-            <div class="log-index">003</div><div class="log-meta"><time datetime="2021-07">Jul. 2021 → Dec. 2022</time><p>Hyderabad, India</p></div>
+            <div class="log-meta"><time datetime="2021-07">Jul. 2021 → Dec. 2022</time><p>Hyderabad, India</p></div>
             <div class="log-role"><p>Deloitte</p><h3>Analyst</h3></div>
             <ul><li>Automated the employee lifecycle with Apex and Salesforce Flow.</li><li>Removed a manual Data Loader process with UiPath automation.</li><li>Connected Salesforce cases to ServiceNow with reliable field-level mapping.</li></ul>
             <p class="log-stack">Apex / Salesforce / UiPath / ServiceNow</p>
@@ -154,15 +140,14 @@
         </div>
       </section>
 
-      <section class="pressure-stories" aria-labelledby="pressure-title">
+      <section class="pressure-stories" id="pressure-tests" aria-labelledby="pressure-title">
         <div class="pressure-heading">
-          <div class="section-tag section-tag-light" data-reveal><span>02</span> Pressure tests</div>
+          <div class="section-tag section-tag-light" data-reveal>Pressure tests</div>
           <h2 id="pressure-title" data-reveal>Two stories explain how I work better than a skills list.</h2>
           <p data-reveal>I build quickly. Production usually tells me what deserves to become permanent.</p>
         </div>
         <div class="pressure-grid">
           <article class="pressure-story pressure-story-primary" data-reveal>
-            <div class="pressure-number">01</div>
             <p class="pressure-eyebrow">The nightly job that should not have been nightly</p>
             <h3>Three hours became real time.</h3>
             <p>A product-catalog cron fetched more than 100K records every night and took three to four hours to finish. I redesigned it as an event-driven SQS and EventBridge pipeline, built the infrastructure and application code, and published webhooks to subscribers as updates happened.</p>
@@ -172,7 +157,6 @@
             </div>
           </article>
           <article class="pressure-story pressure-story-secondary" data-reveal>
-            <div class="pressure-number">02</div>
             <p class="pressure-eyebrow">My first on-call incident</p>
             <h3>The logs did not know each other.</h3>
             <p>A run of 504s led to a degraded microservice, but there was no correlation across the transaction. I traced it manually once, then built the correlation-ID library I wished I had&mdash;and rolled it across 15+ microservices and five backend platforms.</p>
@@ -186,38 +170,38 @@
 
       <section class="project-lab" id="projects" aria-labelledby="projects-title">
         <div class="project-lab-heading">
-          <div class="section-tag section-tag-light" data-reveal><span>03</span> Selected systems</div>
+          <div class="section-tag" data-reveal>Selected projects</div>
           <h2 id="projects-title" data-reveal>Three builds.<br />Three different kinds of useful.</h2>
         </div>
         <div class="project-specimens">
           <article class="project-specimen project-mcp" data-project>
-            <div class="project-ledger"><span>Specimen 01</span><span>Open source / AI tooling</span></div>
+            <div class="project-ledger">Open source / AI tooling</div>
             <div class="project-copy">
               <p class="project-result">28 tools · four validation layers · official Web3D project</p><h3>x3d-mcp</h3>
               <p>An MCP server that gives language models structured tools to generate, edit, validate, render, and animate standards-compliant X3D scenes.</p>
               <div class="project-links"><a href="https://github.com/Web3DConsortium/x3d_mcp" target="_blank" rel="noopener noreferrer">Official repository ↗</a><a href="https://dl.acm.org/doi/10.1145/3822516.3834882" target="_blank" rel="noopener noreferrer">ACM paper ↗</a></div>
             </div>
             <div class="mcp-machine project-machine" aria-label="Illustration of the x3d-mcp validation flow">
-              <div class="machine-window"><div class="machine-top"><i></i><i></i><i></i><span>x3d_mcp / scene.build</span></div>
+              <div class="machine-window"><div class="machine-top"><span>x3d_mcp / validation flow</span></div>
                 <div class="machine-body"><div class="wire-cube" aria-hidden="true"><i></i><b></b></div><ol><li><span>01</span> Parse request</li><li><span>02</span> Author scene</li><li><span>03</span> Validate × 4</li><li><span>04</span> Render X3D</li></ol></div>
                 <div class="machine-status"><span>VALID</span><strong>28 / tools ready</strong></div></div>
             </div>
           </article>
           <article class="project-specimen project-x3test" data-project>
-            <div class="project-ledger"><span>Specimen 02</span><span>Performance engineering</span></div>
+            <div class="project-ledger">Performance engineering</div>
             <div class="project-copy">
               <p class="project-result">3rd place · Web3D/Metaverse Tools Competition</p><h3>X3Test</h3>
               <p>A headless framework that turns X3D and X3DOM performance into repeatable numbers—FPS, render time, scene nodes, and regressions in local workflows or CI.</p>
               <div class="project-links"><a href="https://github.com/VT-Visionarium/X3Test" target="_blank" rel="noopener noreferrer">Source code ↗</a><a href="https://doi.org/10.1145/3746237.3746315" target="_blank" rel="noopener noreferrer">ACM paper ↗</a></div>
             </div>
-            <div class="benchmark-machine project-machine" aria-label="X3Test benchmark readout">
-              <div class="benchmark-title"><span>run_042</span><strong>PASS</strong></div><div class="benchmark-number"><strong>59.7</strong><span>frames / second</span></div>
+            <div class="benchmark-machine project-machine" aria-label="Illustrative X3Test benchmark readout, not measured project results">
+              <div class="benchmark-title"><span>Illustrative benchmark</span><strong>PASS</strong></div><div class="benchmark-number"><strong>59.7</strong><span>frames / second</span></div>
               <div class="benchmark-chart" aria-hidden="true"><i style="--bar: 32%"></i><i style="--bar: 48%"></i><i style="--bar: 44%"></i><i style="--bar: 67%"></i><i style="--bar: 58%"></i><i style="--bar: 84%"></i><i style="--bar: 74%"></i><i style="--bar: 94%"></i><i style="--bar: 88%"></i></div>
               <div class="benchmark-foot"><span>16.8ms render</span><span>1,284 nodes</span><span>Δ 1.2%</span></div>
             </div>
           </article>
           <article class="project-specimen project-stars" data-project>
-            <div class="project-ledger"><span>Specimen 03</span><span>Education / data platform</span></div>
+            <div class="project-ledger">Education / data platform</div>
             <div class="project-copy">
               <p class="project-result">Survey webhook → scoring → school-ready report</p><h3>Rural STARS</h3>
               <p>The project closest to me: a real-time screening and reporting platform that helps rural teachers identify gifted students who are too often overlooked by the software industry.</p>
@@ -233,18 +217,18 @@
 
       <section class="proof-wall" id="recognition" aria-labelledby="recognition-title">
         <div class="proof-heading">
-          <div class="section-tag" data-reveal><span>04</span> Receipts</div><h2 id="recognition-title" data-reveal>Proof that left the repository.</h2>
+          <div class="section-tag" data-reveal>Recognition</div><h2 id="recognition-title" data-reveal>Proof that left the repository.</h2>
           <p data-reveal>Peer review, open-source recognition, and a couple of certificates worth keeping.</p>
         </div>
         <div class="award-wall">
           <article class="award-poster award-poster-blue" data-award>
-            <div class="award-pin" aria-hidden="true"></div><p><span>2026</span> Scientific Excellence</p>
+            <p><span>2026</span> Scientific Excellence</p>
             <a href="./assets/awards/web3d-2026-scientific-excellence-award.png" target="_blank" rel="noopener"><img src="./assets/awards/web3d-2026-scientific-excellence-award.png" alt="Web3D 2026 Scientific Excellence Award certificate" width="1856" height="1052" loading="lazy" /></a>
             <h3>x3d-mcp</h3><p>ACM Web3D recognition for its contribution to AI-assisted X3D authoring.</p>
             <a class="award-action" href="https://dl.acm.org/doi/10.1145/3822516.3834882" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
           </article>
           <article class="award-poster award-poster-yellow" data-award>
-            <div class="award-pin" aria-hidden="true"></div><p><span>2025</span> 3rd Place Winner</p>
+            <p><span>2025</span> 3rd Place Winner</p>
             <a href="./assets/awards/web3d-2025-x3test-third-place.jpg" target="_blank" rel="noopener"><img src="./assets/awards/web3d-2025-x3test-third-place.jpg" alt="Web3D 2025 certificate naming X3Test the third-place winner" width="1920" height="1445" loading="lazy" /></a>
             <h3>X3Test</h3><p>Web3D/Metaverse Tools Competition recognition for automated performance benchmarking.</p>
             <a class="award-action" href="https://doi.org/10.1145/3746237.3746315" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
@@ -260,7 +244,7 @@
       </section>
 
       <section class="education-strip" aria-labelledby="education-title">
-        <div class="education-title" data-reveal><div class="section-tag section-tag-light"><span>05</span> Formation</div><h2 id="education-title">Two degrees.<br />Still learning.</h2></div>
+        <div class="education-title" data-reveal><div class="section-tag section-tag-light">Education</div><h2 id="education-title">Two degrees.<br />Still learning.</h2></div>
         <div class="education-records">
           <article data-reveal><span>2023—2024</span><h3>Virginia Tech</h3><p>MS, Computer Science · GPA 3.97 / 4.00</p><small>Blacksburg, Virginia</small></article>
           <article data-reveal><span>2017—2021</span><h3>JNTU Hyderabad</h3><p>BTech, Computer Science &amp; Engineering</p><small>Hyderabad, India</small></article>
@@ -268,27 +252,23 @@
       </section>
 
       <section class="note-section" id="writing" aria-labelledby="writing-title">
-        <p class="note-kicker" data-reveal>Note 001 / learning in public</p>
+        <p class="note-kicker" data-reveal>Writing / learning in public</p>
         <a class="note-link" href="blog/dsa-journey.html" data-reveal><span class="note-arrow" aria-hidden="true">↗</span><h2 id="writing-title">My love-hate, ever-evolving journey with data structures and algorithms</h2><p>Why mastery is an ongoing process of exploration rather than a finish line.</p><strong>Read the note · 7 min</strong></a>
       </section>
 
       <section class="personal-reel" aria-labelledby="personal-title">
-        <div class="reel-track" aria-hidden="true"><span>WRITE</span><i></i><span>FILM</span><i></i><span>BUILD</span><i></i><span>REPEAT</span></div>
         <div class="personal-copy">
           <p class="note-kicker" data-reveal>Off the clock / still making things</p>
           <h2 id="personal-title" data-reveal>Software is not my only blank page.</h2>
           <p data-reveal>I write screenplays and scripts, make short films, follow F1, MMA and wrestling, care too much about cars, and listen to music without respecting genre boundaries.</p>
         </div>
-        <div class="personal-tags" data-reveal aria-label="Personal interests">
-          <span>Screenplays</span><span>Short films</span><span>F1</span><span>Cars</span><span>MMA</span><span>Wrestling</span><span>Music everywhere</span>
-        </div>
       </section>
 
       <section class="contact-poster" id="contact" aria-labelledby="contact-title">
-        <div class="contact-meta"><span>Exploring software engineering roles</span><span data-chicago-time>Chicago · --:--</span></div>
+        <div class="contact-meta"><span>Exploring software engineering roles</span><span data-central-time>Central Time · --:--</span></div>
         <h2 id="contact-title" data-reveal>Put me on a lean team with something worth owning.</h2>
         <p class="contact-intro" data-reveal>High autonomy. High ownership. From the first useful version through the production graph.</p>
-        <a class="contact-email" href="mailto:nikhilnarra@vt.edu" data-magnetic><span>nikhilnarra@vt.edu</span><i aria-hidden="true">↗</i></a>
+        <a class="contact-email" href="mailto:nikhilnarra@vt.edu"><span>nikhilnarra@vt.edu</span><i aria-hidden="true">↗</i></a>
         <div class="contact-links"><a href="https://github.com/niknarra" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/nikhilnarra/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.npmjs.com/~niknarra" target="_blank" rel="noopener noreferrer">npm ↗</a></div>
       </section>
     </main>
@@ -296,12 +276,12 @@
     <footer class="portfolio-footer">
       <img class="footer-logo" src="./assets/NN_Updated_logo.png" alt="" width="40" height="40" />
       <span class="footer-visitors"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fniknarra.github.io%2F&amp;label=VISITORS&amp;labelColor=%23171712&amp;countColor=%2368152F&amp;style=flat-square&amp;labelStyle=upper" alt="Portfolio visitor count" height="20" loading="lazy" referrerpolicy="no-referrer" /></span>
-      <time class="footer-updated" data-last-updated datetime="2026-10-29">Last updated Oct 29, 2026</time><a href="#top">Back to top ↑</a>
+      <time class="footer-updated" data-last-updated datetime="2026-10-30">Last updated Oct 30, 2026</time><a href="#top">Back to top ↑</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
     <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js" defer></script>
-    <script src="./javascript/main.js?v=20261029-3" defer></script>
+    <script src="./javascript/main.js?v=20261030-3" defer></script>
   </body>
 </html>
